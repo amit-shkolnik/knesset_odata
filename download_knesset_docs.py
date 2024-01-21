@@ -11,10 +11,14 @@ from logger_configurer import configure_logger
 
 log=configure_logger('default')
 
+# Knesset ODATA site
 main_hypelink="http://knesset.gov.il/Odata/ParliamentInfo.svc/"
+# Datasources on Knesset ODATA to be scraped.
 plenum_session_ref="KNS_DocumentPlenumSession"
-format="format=json"
+committees_sessions="KNS_DocumentCommitteeSession"
+bills="KNS_DocumentBill"
 
+odata_download_format="format=json"
 
 def download_datasouce_docs(source_name:str, skip_token:str)->str:
     """
@@ -22,7 +26,7 @@ def download_datasouce_docs(source_name:str, skip_token:str)->str:
     Knesset ODATA API
     """
     already_downloaded=get_already_downloaded(source_name)
-    url=f"{main_hypelink}{source_name}?${format}"
+    url=f"{main_hypelink}{source_name}?${odata_download_format}"
     # Paging through the ODATA
     if skip_token:
         token=skip_token.split("?$")[1]
@@ -41,7 +45,7 @@ def download_datasouce_docs(source_name:str, skip_token:str)->str:
             if entry["FilePath"].split("/")[-1] in already_downloaded:
                 log.info(f"{idx}/{num_of_docs} {entry['FilePath']} already downloaded")
                 continue
-            log.info(f"{idx+1}/{num_of_docs} Downloading {entry['FilePath']}")
+            log.info(f"{idx}/{num_of_docs} Downloading {entry['FilePath']}")
             file_name=download_doc(source_name, entry)
             extract_text_from_doc(source_name, file_name)
             documents_log_list.append(entry)
@@ -51,7 +55,7 @@ def download_datasouce_docs(source_name:str, skip_token:str)->str:
             continue
         continue
     if len(documents_log_list)>0:
-        log_documents(documents_log_list)
+        log_documents(source_name, documents_log_list)
     # something like "KNS_DocumentPlenumSession?$skiptoken=128985L" to move
     # to next page on ODATA
     if "odata.nextLink" in response.json():
@@ -65,16 +69,19 @@ def get_already_downloaded(source):
     return already_downloaded
 
 
-def log_documents(documents_log_list:list):
+def log_documents(source_name:str, documents_log_list:list):
     """
     Save a log of all downloaded documents 
     """
     new_docs_df=pd.DataFrame(documents_log_list)
 
-    _file="docs_download_log.txt"
-    old_docs_df=pd.read_csv(_file)
-    concated_df=pd.concat([new_docs_df, old_docs_df])
-    concated_df.to_csv(_file, index=False)
+    _file=f"{source_name}_docs_download_log.txt"
+    if os.path.exists(_file):
+        old_docs_df=pd.read_csv(_file)
+        concated_df=pd.concat([new_docs_df, old_docs_df])
+        concated_df.to_csv(_file, index=False)
+    else:
+        new_docs_df.to_csv(_file, index=False)
 
     return
 
@@ -161,7 +168,7 @@ def mkdir_per_source(source:str):
         os.makedirs(f"{source}_extracted_texts")
 
 
-datasets_sources=[plenum_session_ref]
+datasets_sources=[bills, committees_sessions, plenum_session_ref]
 
 for source in datasets_sources:
     mkdir_per_source(source)

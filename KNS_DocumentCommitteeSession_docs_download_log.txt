@@ -1,0 +1,2 @@
+DocumentCommitteeSessionID,CommitteeSessionID,GroupTypeID,GroupTypeDesc,ApplicationID,ApplicationDesc,FilePath,LastUpdatedDate
+71337,66050,23,פרוטוקול ועדה,1,DOC,https://fs.knesset.gov.il//16/Committees/16_ptv_71310.doc,2010-06-02T20:32:34.263

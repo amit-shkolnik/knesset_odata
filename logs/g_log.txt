@@ -2444,3 +2444,343 @@ PermissionError: [Errno 13] Permission denied: 'docs\\16_ptm_129012.doc'
 2024-01-21 16:31:27 - INFO - Document downloaded successfully.
 2024-01-21 16:31:37 - INFO - Document's text successfuly extracted
 2024-01-21 16:31:37 - INFO - 41/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_ptm_129026.doc
+2024-01-21 16:31:38 - INFO - Document downloaded successfully.
+2024-01-21 16:32:03 - INFO - Document's text successfuly extracted
+2024-01-21 16:32:03 - INFO - 42/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_toc_129027.DOC
+2024-01-21 16:32:03 - INFO - Document downloaded successfully.
+2024-01-21 16:32:19 - INFO - Document's text successfuly extracted
+2024-01-21 16:32:19 - INFO - 43/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_ptm_129028.doc
+2024-01-21 16:32:37 - INFO - Document downloaded successfully.
+2024-01-21 16:33:19 - INFO - Document's text successfuly extracted
+2024-01-21 16:33:19 - INFO - 44/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_toc_129029.DOC
+2024-01-21 16:33:20 - INFO - Document downloaded successfully.
+2024-01-21 16:33:30 - INFO - Document's text successfuly extracted
+2024-01-21 16:33:30 - INFO - 45/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_ptm_129030.doc
+2024-01-21 16:33:31 - INFO - Document downloaded successfully.
+2024-01-21 16:33:57 - INFO - Document's text successfuly extracted
+2024-01-21 16:33:57 - INFO - 46/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_ptm_129031.doc
+2024-01-21 16:33:57 - INFO - Document downloaded successfully.
+2024-01-21 16:34:40 - INFO - Document's text successfuly extracted
+2024-01-21 16:34:40 - INFO - 47/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_toc_129032.DOC
+2024-01-21 16:34:40 - INFO - Document downloaded successfully.
+2024-01-21 16:34:54 - INFO - Document's text successfuly extracted
+2024-01-21 16:34:54 - INFO - 48/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_toc_129033.DOC
+2024-01-21 16:34:54 - INFO - Document downloaded successfully.
+2024-01-21 16:35:11 - INFO - Document's text successfuly extracted
+2024-01-21 16:35:11 - INFO - 49/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_ptm_129034.doc
+2024-01-21 16:35:11 - INFO - Document downloaded successfully.
+2024-01-21 16:35:53 - INFO - Document's text successfuly extracted
+2024-01-21 16:35:53 - INFO - 50/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_toc_129035.DOC
+2024-01-21 16:35:54 - INFO - Document downloaded successfully.
+2024-01-21 16:36:03 - INFO - Document's text successfuly extracted
+2024-01-21 16:36:03 - INFO - 51/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_ptm_129036.doc
+2024-01-21 16:36:03 - INFO - Document downloaded successfully.
+2024-01-21 16:36:23 - INFO - Document's text successfuly extracted
+2024-01-21 16:36:23 - INFO - 52/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_toc_129037.DOC
+2024-01-21 16:36:23 - INFO - Document downloaded successfully.
+2024-01-21 16:36:33 - INFO - Document's text successfuly extracted
+2024-01-21 16:36:33 - INFO - 53/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_ptm_129038.doc
+2024-01-21 16:36:34 - INFO - Document downloaded successfully.
+2024-01-21 16:37:10 - INFO - Document's text successfuly extracted
+2024-01-21 16:37:10 - INFO - 54/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_ptm_129039.doc
+2024-01-21 16:37:11 - INFO - Document downloaded successfully.
+2024-01-21 16:38:12 - INFO - Document's text successfuly extracted
+2024-01-21 16:38:12 - INFO - 55/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_ptm_129040.doc
+2024-01-21 16:38:12 - INFO - Document downloaded successfully.
+2024-01-21 16:38:34 - INFO - Document's text successfuly extracted
+2024-01-21 16:38:34 - INFO - 56/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_ptm_129041.doc
+2024-01-21 16:38:34 - INFO - Document downloaded successfully.
+2024-01-21 16:39:08 - INFO - Document's text successfuly extracted
+2024-01-21 16:39:08 - INFO - 57/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_ptm_129042.doc
+2024-01-21 16:39:09 - INFO - Document downloaded successfully.
+2024-01-21 16:40:50 - INFO - Document's text successfuly extracted
+2024-01-21 16:40:50 - INFO - 58/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_ptm_129043.doc
+2024-01-21 16:40:51 - INFO - Document downloaded successfully.
+2024-01-21 16:41:56 - INFO - Document's text successfuly extracted
+2024-01-21 16:41:56 - INFO - 59/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_ptm_129044.doc
+2024-01-21 16:41:57 - INFO - Document downloaded successfully.
+2024-01-21 16:42:35 - INFO - Document's text successfuly extracted
+2024-01-21 16:42:35 - INFO - 60/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_ptm_129045.doc
+2024-01-21 16:42:36 - INFO - Document downloaded successfully.
+2024-01-21 16:42:45 - ERROR - Word.Application.Documents
+Traceback (most recent call last):
+  File "C:\Users\Amit\OneDrive\Repos\knesset_odata\download_knesset_docs.py", line 46, in download_datasouce_docs
+    extract_text_from_doc(source_name, file_name)
+  File "C:\Users\Amit\OneDrive\Repos\knesset_odata\download_knesset_docs.py", line 105, in extract_text_from_doc
+    extract_text_from_ms_word(source_name, file_name)
+  File "C:\Users\Amit\OneDrive\Repos\knesset_odata\download_knesset_docs.py", line 112, in extract_text_from_ms_word
+    return read_old_msword_doc(source_name, file_name)
+  File "C:\Users\Amit\OneDrive\Repos\knesset_odata\download_knesset_docs.py", line 121, in read_old_msword_doc
+    doc = word.Documents.Open(os.path.join(os.getcwd(), f"{source_name}_docs", file_path))
+  File "C:\Users\Amit\AppData\Roaming\Python\Python310\site-packages\win32com\client\dynamic.py", line 638, in __getattr__
+    raise AttributeError("%s.%s" % (self._username_, attr))
+AttributeError: Word.Application.Documents
+2024-01-21 16:43:33 - INFO - 61/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_ptm_129046.doc
+2024-01-21 16:43:33 - INFO - Document downloaded successfully.
+2024-01-21 16:44:23 - INFO - Document's text successfuly extracted
+2024-01-21 16:44:23 - INFO - 62/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_ptm_129047.doc
+2024-01-21 16:44:24 - INFO - Document downloaded successfully.
+2024-01-21 16:44:30 - ERROR - Open.Paragraphs
+Traceback (most recent call last):
+  File "C:\Users\Amit\OneDrive\Repos\knesset_odata\download_knesset_docs.py", line 46, in download_datasouce_docs
+    extract_text_from_doc(source_name, file_name)
+  File "C:\Users\Amit\OneDrive\Repos\knesset_odata\download_knesset_docs.py", line 105, in extract_text_from_doc
+    extract_text_from_ms_word(source_name, file_name)
+  File "C:\Users\Amit\OneDrive\Repos\knesset_odata\download_knesset_docs.py", line 112, in extract_text_from_ms_word
+    return read_old_msword_doc(source_name, file_name)
+  File "C:\Users\Amit\OneDrive\Repos\knesset_odata\download_knesset_docs.py", line 123, in read_old_msword_doc
+    for paragraph in doc.Paragraphs:
+  File "C:\Users\Amit\AppData\Roaming\Python\Python310\site-packages\win32com\client\dynamic.py", line 638, in __getattr__
+    raise AttributeError("%s.%s" % (self._username_, attr))
+AttributeError: Open.Paragraphs
+2024-01-21 16:44:32 - INFO - 63/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_ptm_129048.doc
+2024-01-21 16:44:33 - INFO - Document downloaded successfully.
+2024-01-21 16:44:43 - ERROR - Open.Paragraphs
+Traceback (most recent call last):
+  File "C:\Users\Amit\OneDrive\Repos\knesset_odata\download_knesset_docs.py", line 46, in download_datasouce_docs
+    extract_text_from_doc(source_name, file_name)
+  File "C:\Users\Amit\OneDrive\Repos\knesset_odata\download_knesset_docs.py", line 105, in extract_text_from_doc
+    extract_text_from_ms_word(source_name, file_name)
+  File "C:\Users\Amit\OneDrive\Repos\knesset_odata\download_knesset_docs.py", line 112, in extract_text_from_ms_word
+    return read_old_msword_doc(source_name, file_name)
+  File "C:\Users\Amit\OneDrive\Repos\knesset_odata\download_knesset_docs.py", line 123, in read_old_msword_doc
+    for paragraph in doc.Paragraphs:
+  File "C:\Users\Amit\AppData\Roaming\Python\Python310\site-packages\win32com\client\dynamic.py", line 638, in __getattr__
+    raise AttributeError("%s.%s" % (self._username_, attr))
+AttributeError: Open.Paragraphs
+2024-01-21 16:44:43 - INFO - 64/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_ptm_129049.doc
+2024-01-21 16:44:44 - INFO - Document downloaded successfully.
+2024-01-21 16:45:55 - INFO - Document's text successfuly extracted
+2024-01-21 16:47:57 - ERROR - Open.Paragraphs
+Traceback (most recent call last):
+  File "C:\Users\Amit\OneDrive\Repos\knesset_odata\download_knesset_docs.py", line 46, in download_datasouce_docs
+    extract_text_from_doc(source_name, file_name)
+  File "C:\Users\Amit\OneDrive\Repos\knesset_odata\download_knesset_docs.py", line 105, in extract_text_from_doc
+    extract_text_from_ms_word(source_name, file_name)
+  File "C:\Users\Amit\OneDrive\Repos\knesset_odata\download_knesset_docs.py", line 112, in extract_text_from_ms_word
+    return read_old_msword_doc(source_name, file_name)
+  File "C:\Users\Amit\OneDrive\Repos\knesset_odata\download_knesset_docs.py", line 123, in read_old_msword_doc
+    for paragraph in doc.Paragraphs:
+  File "C:\Users\Amit\AppData\Roaming\Python\Python310\site-packages\win32com\client\dynamic.py", line 638, in __getattr__
+    raise AttributeError("%s.%s" % (self._username_, attr))
+AttributeError: Open.Paragraphs
+2024-01-21 16:47:57 - INFO - 65/100 Downloading https://fs.knesset.gov.il//16/Plenum/16_ptm_129050.doc
+2024-01-21 16:47:58 - INFO - Document downloaded successfully.
+2024-01-21 16:49:47 - INFO - *** ROUND 1 ***
+2024-01-21 16:49:53 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentCommitteeSession?$format=json ***
+2024-01-21 16:50:02 - INFO - *** 100 documents to download ***
+2024-01-21 16:50:08 - INFO - 1/100 Downloading https://fs.knesset.gov.il//16/Committees/16_ptv_71308.doc
+2024-01-21 16:50:10 - INFO - Document downloaded successfully.
+2024-01-21 16:51:06 - INFO - Document's text successfuly extracted
+2024-01-21 16:54:23 - INFO - *** ROUND 1 ***
+2024-01-21 16:54:28 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentCommitteeSession?$format=json ***
+2024-01-21 16:54:29 - INFO - *** 100 documents to download ***
+2024-01-21 16:54:29 - INFO - 0/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71308.doc already downloaded
+2024-01-21 16:54:29 - INFO - 2/100 Downloading https://fs.knesset.gov.il//16/Committees/16_ptv_71309.doc
+2024-01-21 16:54:30 - INFO - Document downloaded successfully.
+2024-01-21 16:54:37 - INFO - Document's text successfuly extracted
+2024-01-21 16:55:28 - INFO - *** ROUND 1 ***
+2024-01-21 16:55:32 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentCommitteeSession?$format=json ***
+2024-01-21 16:55:33 - INFO - *** 100 documents to download ***
+2024-01-21 16:55:33 - INFO - 0/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71308.doc already downloaded
+2024-01-21 16:55:33 - INFO - 1/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71309.doc already downloaded
+2024-01-21 16:55:33 - INFO - 3/100 Downloading https://fs.knesset.gov.il//16/Committees/16_ptv_71310.doc
+2024-01-21 16:55:33 - INFO - Document downloaded successfully.
+2024-01-21 16:55:42 - INFO - Document's text successfuly extracted
+2024-01-21 16:56:39 - INFO - *** ROUND 1 ***
+2024-01-21 16:56:40 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentCommitteeSession?$format=json ***
+2024-01-21 16:56:41 - INFO - *** 100 documents to download ***
+2024-01-21 16:56:41 - INFO - 0/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71308.doc already downloaded
+2024-01-21 16:56:41 - INFO - 1/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71309.doc already downloaded
+2024-01-21 16:56:41 - INFO - 2/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71310.doc already downloaded
+2024-01-21 16:56:41 - INFO - 3/100 Downloading https://fs.knesset.gov.il//16/Committees/16_ptv_71402.doc
+2024-01-21 16:56:41 - INFO - Document downloaded successfully.
+2024-01-21 16:56:48 - INFO - Document's text successfuly extracted
+2024-01-21 16:56:50 - INFO - 4/100 Downloading https://fs.knesset.gov.il//16/Committees/16_ptv_71461.doc
+2024-01-21 16:56:51 - INFO - Document downloaded successfully.
+2024-01-21 16:56:57 - INFO - Document's text successfuly extracted
+2024-01-21 16:56:57 - INFO - 5/100 Downloading https://fs.knesset.gov.il//16/Committees/16_ptv_71469.doc
+2024-01-21 16:56:57 - INFO - Document downloaded successfully.
+2024-01-21 16:57:02 - INFO - Document's text successfuly extracted
+2024-01-21 16:57:02 - INFO - 6/100 Downloading https://fs.knesset.gov.il//16/Committees/16_ptv_71474.doc
+2024-01-21 16:57:04 - INFO - Document downloaded successfully.
+2024-01-21 16:57:15 - INFO - Document's text successfuly extracted
+2024-01-21 16:57:15 - INFO - 7/100 Downloading https://fs.knesset.gov.il//16/Committees/16_ptv_71484.doc
+2024-01-21 16:57:15 - INFO - Document downloaded successfully.
+2024-01-21 16:57:27 - INFO - Document's text successfuly extracted
+2024-01-21 16:59:51 - INFO - 8/100 Downloading https://fs.knesset.gov.il//16/Committees/16_ptv_71486.doc
+2024-01-21 16:59:52 - INFO - Document downloaded successfully.
+2024-01-21 16:59:57 - INFO - Document's text successfuly extracted
+2024-01-21 17:00:13 - INFO - *** ROUND 1 ***
+2024-01-21 17:00:15 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentBill?$format=json ***
+2024-01-21 17:00:19 - INFO - *** 100 documents to download ***
+2024-01-21 17:00:21 - INFO - 0/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73614.doc
+2024-01-21 17:00:24 - INFO - Document downloaded successfully.
+2024-01-21 17:00:31 - INFO - Document's text successfuly extracted
+2024-01-21 17:00:50 - INFO - 1/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73617.doc
+2024-01-21 17:00:50 - INFO - Document downloaded successfully.
+2024-01-21 17:00:53 - INFO - Document's text successfuly extracted
+2024-01-21 17:00:53 - INFO - 2/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73618.doc
+2024-01-21 17:00:53 - INFO - Document downloaded successfully.
+2024-01-21 17:00:56 - INFO - Document's text successfuly extracted
+2024-01-21 17:00:56 - INFO - 3/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73619.doc
+2024-01-21 17:00:58 - INFO - Document downloaded successfully.
+2024-01-21 17:01:04 - INFO - Document's text successfuly extracted
+2024-01-21 17:01:04 - INFO - 4/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73620.doc
+2024-01-21 17:01:04 - INFO - Document downloaded successfully.
+2024-01-21 17:01:11 - INFO - Document's text successfuly extracted
+2024-01-21 17:01:11 - INFO - 5/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73621.doc
+2024-01-21 17:01:11 - INFO - Document downloaded successfully.
+2024-01-21 17:01:18 - INFO - Document's text successfuly extracted
+2024-01-21 17:01:18 - INFO - 6/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73622.doc
+2024-01-21 17:01:18 - INFO - Document downloaded successfully.
+2024-01-21 17:01:24 - INFO - Document's text successfuly extracted
+2024-01-21 17:01:24 - INFO - 7/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73623.doc
+2024-01-21 17:01:25 - INFO - Document downloaded successfully.
+2024-01-21 17:01:30 - INFO - Document's text successfuly extracted
+2024-01-21 17:01:30 - INFO - 8/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73624.doc
+2024-01-21 17:01:30 - INFO - Document downloaded successfully.
+2024-01-21 17:01:37 - INFO - Document's text successfuly extracted
+2024-01-21 17:01:37 - INFO - 9/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73631.doc
+2024-01-21 17:01:37 - INFO - Document downloaded successfully.
+2024-01-21 17:01:42 - INFO - Document's text successfuly extracted
+2024-01-21 17:01:42 - INFO - 10/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73633.doc
+2024-01-21 17:01:42 - INFO - Document downloaded successfully.
+2024-01-21 17:01:45 - INFO - Document's text successfuly extracted
+2024-01-21 17:01:45 - INFO - 11/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73636.doc
+2024-01-21 17:01:46 - INFO - Document downloaded successfully.
+2024-01-21 17:01:49 - INFO - Document's text successfuly extracted
+2024-01-21 17:01:49 - INFO - 12/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73637.doc
+2024-01-21 17:01:49 - INFO - Document downloaded successfully.
+2024-01-21 17:01:52 - INFO - Document's text successfuly extracted
+2024-01-21 17:01:52 - INFO - 13/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73639.doc
+2024-01-21 17:01:54 - INFO - Document downloaded successfully.
+2024-01-21 17:01:58 - INFO - Document's text successfuly extracted
+2024-01-21 17:01:58 - INFO - 14/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73641.doc
+2024-01-21 17:01:58 - INFO - Document downloaded successfully.
+2024-01-21 17:02:03 - INFO - Document's text successfuly extracted
+2024-01-21 17:02:03 - INFO - 15/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73643.doc
+2024-01-21 17:02:03 - INFO - Document downloaded successfully.
+2024-01-21 17:02:08 - INFO - Document's text successfuly extracted
+2024-01-21 17:02:08 - INFO - 16/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73647.doc
+2024-01-21 17:02:09 - INFO - Document downloaded successfully.
+2024-01-21 17:02:14 - INFO - Document's text successfuly extracted
+2024-01-21 17:02:14 - INFO - 17/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73649.doc
+2024-01-21 17:02:14 - INFO - Document downloaded successfully.
+2024-01-21 17:02:20 - INFO - Document's text successfuly extracted
+2024-01-21 17:02:20 - INFO - 18/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73651.doc
+2024-01-21 17:02:21 - INFO - Document downloaded successfully.
+2024-01-21 17:02:26 - INFO - Document's text successfuly extracted
+2024-01-21 17:02:26 - INFO - 19/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73652.doc
+2024-01-21 17:02:26 - INFO - Document downloaded successfully.
+2024-01-21 17:02:34 - INFO - Document's text successfuly extracted
+2024-01-21 17:02:34 - INFO - 20/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73656.doc
+2024-01-21 17:02:34 - INFO - Document downloaded successfully.
+2024-01-21 17:02:39 - INFO - Document's text successfuly extracted
+2024-01-21 17:02:39 - INFO - 21/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73659.doc
+2024-01-21 17:02:39 - INFO - Document downloaded successfully.
+2024-01-21 17:02:49 - INFO - Document's text successfuly extracted
+2024-01-21 17:02:49 - INFO - 22/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73664.doc
+2024-01-21 17:02:49 - INFO - Document downloaded successfully.
+2024-01-21 17:02:55 - INFO - Document's text successfuly extracted
+2024-01-21 17:02:55 - INFO - 23/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73665.doc
+2024-01-21 17:02:55 - INFO - Document downloaded successfully.
+2024-01-21 17:03:00 - INFO - Document's text successfuly extracted
+2024-01-21 17:03:00 - INFO - 24/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73669.doc
+2024-01-21 17:03:00 - INFO - Document downloaded successfully.
+2024-01-21 17:03:06 - INFO - Document's text successfuly extracted
+2024-01-21 17:03:06 - INFO - 25/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73672.doc
+2024-01-21 17:03:06 - INFO - Document downloaded successfully.
+2024-01-21 17:03:10 - INFO - Document's text successfuly extracted
+2024-01-21 17:03:10 - INFO - 26/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73674.doc
+2024-01-21 17:03:10 - INFO - Document downloaded successfully.
+2024-01-21 17:03:16 - INFO - Document's text successfuly extracted
+2024-01-21 17:03:16 - INFO - 27/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73675.doc
+2024-01-21 17:03:16 - INFO - Document downloaded successfully.
+2024-01-21 17:03:21 - INFO - Document's text successfuly extracted
+2024-01-21 17:03:21 - INFO - 28/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73676.doc
+2024-01-21 17:03:21 - INFO - Document downloaded successfully.
+2024-01-21 17:03:26 - INFO - Document's text successfuly extracted
+2024-01-21 17:03:26 - INFO - 29/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73680.doc
+2024-01-21 17:03:27 - INFO - Document downloaded successfully.
+2024-01-21 17:03:32 - INFO - Document's text successfuly extracted
+2024-01-21 17:03:32 - INFO - 30/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73685.doc
+2024-01-21 17:03:33 - INFO - Document downloaded successfully.
+2024-01-21 17:03:39 - INFO - Document's text successfuly extracted
+2024-01-21 17:03:39 - INFO - 31/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73690.doc
+2024-01-21 17:03:39 - INFO - Document downloaded successfully.
+2024-01-21 17:03:44 - INFO - Document's text successfuly extracted
+2024-01-21 17:03:44 - INFO - 32/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73694.doc
+2024-01-21 17:03:44 - INFO - Document downloaded successfully.
+2024-01-21 17:03:56 - INFO - Document's text successfuly extracted
+2024-01-21 17:03:56 - INFO - 33/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73699.doc
+2024-01-21 17:03:57 - INFO - Document downloaded successfully.
+2024-01-21 17:04:02 - INFO - Document's text successfuly extracted
+2024-01-21 17:04:02 - INFO - 34/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73700.doc
+2024-01-21 17:04:02 - INFO - Document downloaded successfully.
+2024-01-21 17:04:10 - INFO - Document's text successfuly extracted
+2024-01-21 17:04:10 - INFO - 35/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73703.doc
+2024-01-21 17:04:10 - INFO - Document downloaded successfully.
+2024-01-21 17:04:15 - INFO - Document's text successfuly extracted
+2024-01-21 17:04:15 - INFO - 36/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73709.doc
+2024-01-21 17:04:16 - INFO - Document downloaded successfully.
+2024-01-21 17:04:21 - INFO - Document's text successfuly extracted
+2024-01-21 17:04:21 - INFO - 37/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73713.doc
+2024-01-21 17:04:21 - INFO - Document downloaded successfully.
+2024-01-21 17:04:24 - INFO - Document's text successfuly extracted
+2024-01-21 17:04:24 - INFO - 38/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73717.doc
+2024-01-21 17:04:25 - INFO - Document downloaded successfully.
+2024-01-21 17:04:32 - INFO - Document's text successfuly extracted
+2024-01-21 17:04:32 - INFO - 39/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73718.doc
+2024-01-21 17:04:33 - INFO - Document downloaded successfully.
+2024-01-21 17:04:38 - INFO - Document's text successfuly extracted
+2024-01-21 17:04:38 - INFO - 40/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73719.doc
+2024-01-21 17:04:39 - INFO - Document downloaded successfully.
+2024-01-21 17:04:44 - INFO - Document's text successfuly extracted
+2024-01-21 17:04:44 - INFO - 41/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73720.doc
+2024-01-21 17:04:44 - INFO - Document downloaded successfully.
+2024-01-21 17:04:50 - INFO - Document's text successfuly extracted
+2024-01-21 17:04:50 - INFO - 42/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73723.doc
+2024-01-21 17:04:50 - INFO - Document downloaded successfully.
+2024-01-21 17:04:58 - INFO - Document's text successfuly extracted
+2024-01-21 17:04:58 - INFO - 43/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73727.doc
+2024-01-21 17:04:58 - INFO - Document downloaded successfully.
+2024-01-21 17:05:05 - INFO - Document's text successfuly extracted
+2024-01-21 17:05:05 - INFO - 44/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73730.doc
+2024-01-21 17:05:06 - INFO - Document downloaded successfully.
+2024-01-21 17:05:12 - INFO - Document's text successfuly extracted
+2024-01-21 17:05:12 - INFO - 45/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73733.doc
+2024-01-21 17:05:12 - INFO - Document downloaded successfully.
+2024-01-21 17:05:17 - INFO - Document's text successfuly extracted
+2024-01-21 17:05:17 - INFO - 46/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73737.doc
+2024-01-21 17:05:18 - INFO - Document downloaded successfully.
+2024-01-21 17:05:23 - INFO - Document's text successfuly extracted
+2024-01-21 17:05:23 - INFO - 47/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73739.doc
+2024-01-21 17:05:23 - INFO - Document downloaded successfully.
+2024-01-21 17:05:29 - INFO - Document's text successfuly extracted
+2024-01-21 17:05:29 - INFO - 48/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73743.doc
+2024-01-21 17:05:29 - INFO - Document downloaded successfully.
+2024-01-21 17:05:34 - INFO - Document's text successfuly extracted
+2024-01-21 17:05:34 - INFO - 49/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73744.doc
+2024-01-21 17:05:34 - INFO - Document downloaded successfully.
+2024-01-21 17:05:40 - INFO - Document's text successfuly extracted
+2024-01-21 17:05:40 - INFO - 50/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73746.doc
+2024-01-21 17:05:41 - INFO - Document downloaded successfully.
+2024-01-21 17:05:47 - INFO - Document's text successfuly extracted
+2024-01-21 17:05:47 - INFO - 51/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73753.doc
+2024-01-21 17:05:47 - INFO - Document downloaded successfully.
+2024-01-21 17:05:52 - INFO - Document's text successfuly extracted
+2024-01-21 17:05:52 - INFO - 52/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73759.doc
+2024-01-21 17:05:52 - INFO - Document downloaded successfully.
+2024-01-21 17:09:34 - INFO - Document's text successfuly extracted
+2024-01-21 17:09:34 - INFO - 53/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73762.doc
+2024-01-21 17:09:34 - INFO - Document downloaded successfully.
+2024-01-21 17:09:40 - INFO - Document's text successfuly extracted
+2024-01-21 17:09:40 - INFO - 54/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73763.doc
+2024-01-21 17:09:40 - INFO - Document downloaded successfully.
+2024-01-21 17:09:46 - INFO - Document's text successfuly extracted
+2024-01-21 17:09:46 - INFO - 55/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73766.doc
+2024-01-21 17:09:49 - INFO - Document downloaded successfully.
+2024-01-21 17:09:58 - INFO - Document's text successfuly extracted
+2024-01-21 17:09:58 - INFO - 56/100 Downloading https://fs.knesset.gov.il//16/law/16_ls_ptk_73769.doc
+2024-01-21 17:09:58 - INFO - Document downloaded successfully.
