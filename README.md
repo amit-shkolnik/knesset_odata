@@ -1,1 +1,7 @@
-Project download the Knesset (Israel parlament) protocols
+Project download the Knesset (Israel parlament) protocols.
+Full explanation of Knesset ODATA system can be found here <https://main.knesset.gov.il/activity/info/pages/databases.aspx>
+Project download 3 main sources from Knesset:
+#1. Plenum sessions
+#2. Committees sessions
+#3. Bills
+
