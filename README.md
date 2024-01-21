@@ -5,3 +5,5 @@ Project download 3 main sources from Knesset:
 2. Committees sessions
 3. Bills
 
+Documents are stored in original format and extracted text in .text files
+
