@@ -7,3 +7,6 @@ Project download 3 main sources from Knesset:
 
 Documents are stored in original format and extracted text in .text files
 
+# Prerequesties
+1. As application utilize 'win32com.client' its need to run on Windows OS.
+
