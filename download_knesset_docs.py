@@ -6,11 +6,13 @@ from docx import Document
 import docx2txt
 import chardet 
 import textract
-import win32com.client
 from logger_configurer import configure_logger
 
 log=configure_logger('default')
 
+if os.name !='nt':
+    raise Exception("App needs win32com.client package, hence need to run on Windows")
+import win32com.client
 # Knesset ODATA site
 main_hypelink="http://knesset.gov.il/Odata/ParliamentInfo.svc/"
 # Datasources on Knesset ODATA to be scraped.
@@ -167,7 +169,8 @@ def mkdir_per_source(source:str):
     if not os.path.exists(f"{source}_extracted_texts"):
         os.makedirs(f"{source}_extracted_texts")
 
-
+# Main call
+# Datasource to download from
 datasets_sources=[bills, committees_sessions, plenum_session_ref]
 
 for source in datasets_sources:
