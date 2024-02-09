@@ -2,16 +2,15 @@ import sys
 import os
 import requests
 import pandas as pd
-from docx import Document
-import docx2txt
-import chardet 
-import textract
+
+
 from logger_configurer import configure_logger
 
 log=configure_logger('default')
 
 if os.name !='nt':
     raise Exception("App needs win32com.client package, hence need to run on Windows")
+# Install with 'pip install pywin32'
 import win32com.client
 # Knesset ODATA site
 main_hypelink="http://knesset.gov.il/Odata/ParliamentInfo.svc/"
@@ -21,6 +20,22 @@ committees_sessions="KNS_DocumentCommitteeSession"
 bills="KNS_DocumentBill"
 
 odata_download_format="format=json"
+ms_words_suffix=["doc", "DOC", "docx", "DOCX"]
+
+def download_dataset(source_name, skip_token:str):
+    # Skip token used for paging between Knesset ODATA API pages.    
+    log.info(f"Downloading source {source_name}")
+    rounds=1
+    
+    while True:
+        log.info(f"*** ROUND {rounds} ***")        
+        rounds+=1
+        skip_token, errors_list=download_datasouce_docs(source_name, skip_token)    
+        if len(errors_list)>0:
+            log_erros(errors_list)            
+        if not skip_token:
+            break
+
 
 def download_datasouce_docs(source_name:str, skip_token:str)->str:
     """
@@ -47,9 +62,13 @@ def download_datasouce_docs(source_name:str, skip_token:str)->str:
             if entry["FilePath"].split("/")[-1] in already_downloaded:
                 log.info(f"{idx}/{num_of_docs} {entry['FilePath']} already downloaded")
                 continue
+            if entry['FilePath'].split(".").pop() not in ms_words_suffix:
+                log.info(f"Skipping non MS Word doc {entry['FilePath']}")
+                continue
             log.info(f"{idx}/{num_of_docs} Downloading {entry['FilePath']}")
             file_name=download_doc(source_name, entry)
-            extract_text_from_doc(source_name, file_name)
+            if file_name is not None:
+                extract_text_from_doc(source_name, file_name)
             documents_log_list.append(entry)
         except Exception as err:
             log.exception(err)
@@ -109,15 +128,18 @@ def extract_text_from_doc(source_name:str, file_name:str):
     Extract text from downloaded document management method.
     Handle per document format: .doc, .docx, .pdf, etc.
     """
-    ms_words_suffix=["doc", "DOC", "docx", "DOCX"]
+    
     if file_name.lower().split(".")[len(file_name.split("."))-1] in ms_words_suffix:
         extract_text_from_ms_word(source_name, file_name)
         log.info("Document's text successfuly extracted")
+
+    else:
+        log.info("This file type is not handled")
     return
 
 def  extract_text_from_ms_word(source_name:str, file_name:str):
     # Old .doc format, non OXML files.
-    if file_name.lower().endswith(".doc"):
+    if file_name.lower().split(".").pop() in ms_words_suffix:
         return read_old_msword_doc(source_name, file_name)    
    
 
@@ -149,19 +171,6 @@ def log_erros(errors_list):
     return
     
 
-def download_dataset(source_name):
-    # Skip token used for paging between Knesset ODATA API pages.
-    rounds=1
-    skip_token=None
-    while True:
-        log.info(f"*** ROUND {rounds} ***")        
-        rounds+=1
-        skip_token, errors_list=download_datasouce_docs(source_name, skip_token)    
-        if len(errors_list)>0:
-            log_erros(errors_list)            
-        if not skip_token:
-            break
-
 def mkdir_per_source(source:str):
     # Folder to store original docs downloaded from Knesset ODATA
     if not os.path.exists(f"{source}_docs"):
@@ -172,8 +181,10 @@ def mkdir_per_source(source:str):
 # Main call
 # Datasource to download from
 datasets_sources=[bills, committees_sessions, plenum_session_ref]
+# Skip tokens per source-not to re-iterate all pages
+skip_tokens=["?$skiptoken=220750L", None, None]
 
-for source in datasets_sources:
+for idx, source in enumerate(datasets_sources):
     mkdir_per_source(source)
-    download_dataset(source)
+    download_dataset(source, skip_token=skip_tokens[idx])
     continue
