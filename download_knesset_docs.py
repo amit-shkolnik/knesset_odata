@@ -153,12 +153,24 @@ def read_old_msword_doc(source_name:str, file_path):
     full_text = []
     for paragraph in doc.Paragraphs:
         full_text.append(paragraph.Range.Text.strip())
+    # Extract text from Text Box, which appears on
+    # old Knesset documents.
+    for shape in doc.Shapes:
+        # Check if the shape is a textbox
+        if shape.Type == 17:  # 17 represents a textbox shape
+            # Extract text from the textbox
+            text = shape.TextFrame.TextRange.Text
+            full_text.append(text)
     doc.Close()
     word.Quit()
     # Saving to .txt
+    output_text="\n".join([ t for t in full_text if len(t.strip())>0])
+    if len(output_text)==0:
+        log.info("No text found in documet")
+        return
     output_path=os.path.join(os.getcwd(), f"{source_name}_extracted_texts", f"{file_path}.txt")
     with open(output_path, "w", encoding="utf-8") as _fout:
-        _fout.write("\n".join(full_text))
+        _fout.write(output_text)
     
     return
 
@@ -182,7 +194,7 @@ def mkdir_per_source(source:str):
 # Datasource to download from
 datasets_sources=[bills, committees_sessions, plenum_session_ref]
 # Skip tokens per source-not to re-iterate all pages
-skip_tokens=["?$skiptoken=220750L", None, None]
+skip_tokens=["?$skiptoken=269331L", None, None]
 
 for idx, source in enumerate(datasets_sources):
     mkdir_per_source(source)
