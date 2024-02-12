@@ -23,6 +23,10 @@ odata_download_format="format=json"
 ms_words_suffix=["doc", "DOC", "docx", "DOCX"]
 
 def download_dataset(source_name, skip_token:str):
+    """
+    Download documents from 1 source (Plenum, committees, etc),
+    Paging API (100 documents per page)
+    """
     # Skip token used for paging between Knesset ODATA API pages.    
     log.info(f"Downloading source {source_name}")
     rounds=1
@@ -30,17 +34,18 @@ def download_dataset(source_name, skip_token:str):
     while True:
         log.info(f"*** ROUND {rounds} ***")        
         rounds+=1
-        skip_token, errors_list=download_datasouce_docs(source_name, skip_token)    
+        skip_token, errors_list=download_one_page_docs(source_name, skip_token)    
         if len(errors_list)>0:
             log_erros(errors_list)            
         if not skip_token:
             break
 
 
-def download_datasouce_docs(source_name:str, skip_token:str)->str:
+def download_one_page_docs(source_name:str, skip_token:str)->str:    
     """
     Main method to download and extract texts from
-    Knesset ODATA API
+    Knesset ODATA API,
+    Each API page contains -by default- 100 documents' links 
     """
     already_downloaded=get_already_downloaded(source_name)
     url=f"{main_hypelink}{source_name}?${odata_download_format}"
@@ -194,8 +199,9 @@ def mkdir_per_source(source:str):
 # Datasource to download from
 datasets_sources=[bills, committees_sessions, plenum_session_ref]
 # Skip tokens per source-not to re-iterate all pages
-skip_tokens=["?$skiptoken=269331L", None, None]
+skip_tokens=["?$skiptoken=464328L", None, None]
 
+# Loop between Knesset sources (Plenum, committees, etc)
 for idx, source in enumerate(datasets_sources):
     mkdir_per_source(source)
     download_dataset(source, skip_token=skip_tokens[idx])
