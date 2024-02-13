@@ -21,6 +21,8 @@ bills="KNS_DocumentBill"
 
 odata_download_format="format=json"
 ms_words_suffix=["doc", "DOC", "docx", "DOCX"]
+word_application = win32com.client.Dispatch('Word.Application')
+    
 
 def download_dataset(source_name, skip_token:str):
     """
@@ -153,8 +155,8 @@ def read_old_msword_doc(source_name:str, file_path):
     Text extraction from Old word format, non OXML
     """
     
-    word = win32com.client.Dispatch('Word.Application')
-    doc = word.Documents.Open(os.path.join(os.getcwd(), f"{source_name}_docs", file_path))
+    #word_application = win32com.client.Dispatch('Word.Application')
+    doc = word_application.Documents.Open(os.path.join(os.getcwd(), f"{source_name}_docs", file_path))
     full_text = []
     for paragraph in doc.Paragraphs:
         full_text.append(paragraph.Range.Text.strip())
@@ -167,7 +169,7 @@ def read_old_msword_doc(source_name:str, file_path):
             text = shape.TextFrame.TextRange.Text
             full_text.append(text)
     doc.Close()
-    word.Quit()
+    #word_application.Quit()
     # Saving to .txt
     output_text="\n".join([ t for t in full_text if len(t.strip())>0])
     if len(output_text)==0:
