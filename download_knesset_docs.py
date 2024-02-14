@@ -162,7 +162,6 @@ def read_old_msword_doc(source_name:str, file_path):
     doc = word_application.Documents.Open(os.path.join(os.getcwd(), f"{source_name}_docs", file_path))
     full_text = []
     output_text=doc.Range().Text
-    log.info(f"\t{len(output_text.split())} words on doc")
     ''' Old, slower extraction method '''
     # for paragraph in doc.Paragraphs:
     #     full_text.append(paragraph.Range.Text.strip())    
@@ -177,7 +176,10 @@ def read_old_msword_doc(source_name:str, file_path):
             # Extract text from the textbox
             text = shape.TextFrame.TextRange.Text
             full_text.append(text)
+    if len(full_text)>0:
+        output_text="\n".join([ t for t in full_text if len(t.strip())>0])        
     doc.Close(False)    
+    log.info(f"\t{len(output_text.split())} words on doc")
     #word_application.Quit()    
     if len(output_text)==0:
         log.info("No text found in documet")
@@ -208,7 +210,7 @@ def mkdir_per_source(source:str):
 # Datasource to download from
 datasets_sources=[plenum_session_ref, committees_sessions,  bills]
 # Skip tokens per source-not to re-iterate all pages
-skip_tokens=[ "?$skiptoken=128985L", None, "?$skiptoken=497312L"]
+skip_tokens=[ "?$skiptoken=255831L", None, "?$skiptoken=497312L"]
 
 
 for idx, source in enumerate(datasets_sources):
