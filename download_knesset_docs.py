@@ -203,7 +203,13 @@ def mkdir_per_source(source:str):
 # Datasource to download from
 datasets_sources=[plenum_session_ref, committees_sessions,  bills]
 # Skip tokens per source-not to re-iterate all pages
-skip_tokens=[None, None, "?$skiptoken=464328L"]
+skip_tokens=["?$skiptoken=497312L", None, None]
+
+
+for idx, source in enumerate(datasets_sources):
+    _query=f"https://knesset.gov.il/Odata/ParliamentInfo.svc/{source}/$count"
+    _response=requests.get(_query)
+    log.info(f"** TOTAL {_response.text} documents on {source} **")
 
 # Loop between Knesset sources (Plenum, committees, etc)
 for idx, source in enumerate(datasets_sources):
