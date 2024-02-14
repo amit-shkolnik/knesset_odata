@@ -169,7 +169,8 @@ def read_old_msword_doc(source_name:str, file_path):
     # output_text="\n".join([ t for t in full_text if len(t.strip())>0])
 
     # Extract text from Text Box, which appears on
-    # old Knesset documents.
+    # old Knesset documents, originaly extracted from TIFF / PDF images
+    # using OCR.
     for shape in doc.Shapes:
         # Check if the shape is a textbox
         if shape.Type == 17:  # 17 represents a textbox shape
