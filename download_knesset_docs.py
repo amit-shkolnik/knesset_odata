@@ -21,7 +21,10 @@ bills="KNS_DocumentBill"
 
 odata_download_format="format=json"
 ms_words_suffix=["doc", "DOC", "docx", "DOCX"]
+# Main object to open MS WORD docs with
 word_application = win32com.client.Dispatch('Word.Application')
+# Avoid actualy open the docs- all work should be done in the background
+word_application.Visible=False
     
 
 def download_dataset(source_name, skip_token:str):
@@ -158,10 +161,13 @@ def read_old_msword_doc(source_name:str, file_path):
     #word_application = win32com.client.Dispatch('Word.Application')
     doc = word_application.Documents.Open(os.path.join(os.getcwd(), f"{source_name}_docs", file_path))
     full_text = []
-    doc_text=doc.Range().Text
-    print(len(doc_text))
-    for paragraph in doc.Paragraphs:
-        full_text.append(paragraph.Range.Text.strip())
+    output_text=doc.Range().Text
+    log.info(f"\t{len(output_text.split())} words on doc")
+    ''' Old, slower extraction method '''
+    # for paragraph in doc.Paragraphs:
+    #     full_text.append(paragraph.Range.Text.strip())    
+    # output_text="\n".join([ t for t in full_text if len(t.strip())>0])
+
     # Extract text from Text Box, which appears on
     # old Knesset documents.
     for shape in doc.Shapes:
@@ -170,10 +176,8 @@ def read_old_msword_doc(source_name:str, file_path):
             # Extract text from the textbox
             text = shape.TextFrame.TextRange.Text
             full_text.append(text)
-    doc.Close()
-    #word_application.Quit()
-    # Saving to .txt
-    output_text="\n".join([ t for t in full_text if len(t.strip())>0])
+    doc.Close(False)    
+    #word_application.Quit()    
     if len(output_text)==0:
         log.info("No text found in documet")
         return
@@ -203,7 +207,7 @@ def mkdir_per_source(source:str):
 # Datasource to download from
 datasets_sources=[plenum_session_ref, committees_sessions,  bills]
 # Skip tokens per source-not to re-iterate all pages
-skip_tokens=["?$skiptoken=497312L", None, None]
+skip_tokens=[ "?$skiptoken=128985L", None, "?$skiptoken=497312L"]
 
 
 for idx, source in enumerate(datasets_sources):
@@ -216,3 +220,5 @@ for idx, source in enumerate(datasets_sources):
     mkdir_per_source(source)
     download_dataset(source, skip_token=skip_tokens[idx])
     continue
+
+word_application.Quit()
