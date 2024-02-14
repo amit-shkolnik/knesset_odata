@@ -199,9 +199,9 @@ def mkdir_per_source(source:str):
 
 # Main call
 # Datasource to download from
-datasets_sources=[bills, committees_sessions, plenum_session_ref]
+datasets_sources=[plenum_session_ref, committees_sessions, bills,]
 # Skip tokens per source-not to re-iterate all pages
-skip_tokens=["?$skiptoken=497312L", None, None]
+skip_tokens=[ None, None, "?$skiptoken=497312L",]
 
 
 for idx, source in enumerate(datasets_sources):
