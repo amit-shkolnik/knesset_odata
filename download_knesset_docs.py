@@ -158,6 +158,8 @@ def read_old_msword_doc(source_name:str, file_path):
     #word_application = win32com.client.Dispatch('Word.Application')
     doc = word_application.Documents.Open(os.path.join(os.getcwd(), f"{source_name}_docs", file_path))
     full_text = []
+    doc_text=doc.Range().Text
+    print(len(doc_text))
     for paragraph in doc.Paragraphs:
         full_text.append(paragraph.Range.Text.strip())
     # Extract text from Text Box, which appears on
@@ -199,9 +201,9 @@ def mkdir_per_source(source:str):
 
 # Main call
 # Datasource to download from
-datasets_sources=[bills, committees_sessions, plenum_session_ref]
+datasets_sources=[plenum_session_ref, committees_sessions,  bills]
 # Skip tokens per source-not to re-iterate all pages
-skip_tokens=["?$skiptoken=464328L", None, None]
+skip_tokens=[None, None, "?$skiptoken=464328L"]
 
 # Loop between Knesset sources (Plenum, committees, etc)
 for idx, source in enumerate(datasets_sources):
