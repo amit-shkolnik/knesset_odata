@@ -2,7 +2,8 @@ import sys
 import os
 import requests
 import pandas as pd
-
+import time
+from pywintypes import com_error
 
 from logger_configurer import configure_logger
 
@@ -21,59 +22,53 @@ bills="KNS_DocumentBill"
 
 odata_download_format="format=json"
 ms_words_suffix=["doc", "DOC", "docx", "DOCX"]
-# Main object to open MS WORD docs with
-word_application = win32com.client.Dispatch('Word.Application')
-# Avoid actualy open the docs- all work should be done in the background
-word_application.Visible=False
-    
+
+word_application=None 
+# Documents corrupted previously downloaded
+# and can't be open via 'Word'   
+corrupted_docs_log="corrupted_docs_log.csv"
+corrupted_docs_list=[]
+
+false_words=['\n', '\r']
 
 def download_dataset(source_name, skip_token:str):
     """
     Download documents from 1 source (Plenum, committees, etc),
     Paging API (100 documents per page)
     """
-    # Skip token used for paging between Knesset ODATA API pages.    
-    log.info(f"Downloading source {source_name}")
-    rounds=1
-    
-    while True:
-        log.info(f"*** ROUND {rounds} ***")        
-        rounds+=1
-        skip_token, errors_list=download_one_page_docs(source_name, skip_token)    
-        if len(errors_list)>0:
-            log_erros(errors_list)            
-        if not skip_token:
-            break
+    try:
+        # Skip token used for paging between Knesset ODATA API pages.    
+        log.info(f"Downloading source {source_name}")
+        corrupted_docs_list=list(pd.read_csv(corrupted_docs_log)["doc_name"])
+        rounds=1
+        
+        while True:
+            log.info(f"*** ROUND {rounds} ***")        
+            rounds+=1
+            skip_token, errors_list=download_one_page_docs(source_name, skip_token, corrupted_docs_list)    
+            if len(errors_list)>0:
+                log_erros(errors_list)            
+            if not skip_token:
+                break
+    except Exception as err:
+        log.exception(err)
 
-
-def download_one_page_docs(source_name:str, skip_token:str)->str:    
+def download_one_page_docs(source_name:str, skip_token:str, corrupted_docs_list)->str:    
     """
     Main method to download and extract texts from
     Knesset ODATA API,
     Each API page contains -by default- 100 documents' links 
     """
     already_downloaded=get_already_downloaded(source_name)
-    url=f"{main_hypelink}{source_name}?${odata_download_format}"
-    # Paging through the ODATA
-    if skip_token:
-        token=skip_token.split("?$")[1]
-        url=f"{url}&${token}"
-    log.info(f"*** Download main ODATA {url} ***")
     # Call ODATA API
-    response=requests.get(url=url)    
+    response, num_of_docs=get_docs_list(source_name,skip_token)    
     documents_log_list=[]
     errors_list=[]
-    num_of_docs=len(response.json()['value'])
-    log.info(f"*** {num_of_docs} documents to download ***")
     # Per document:
     for idx, entry in  enumerate(response.json()["value"]):
         try:
-            # Skip file if previously donwloaded 
-            if entry["FilePath"].split("/")[-1] in already_downloaded:
-                log.info(f"{idx}/{num_of_docs} {entry['FilePath']} already downloaded")
-                continue
-            if entry['FilePath'].split(".").pop() not in ms_words_suffix:
-                log.info(f"Skipping non MS Word doc {entry['FilePath']}")
+            if not handle_or_skip_docs(entry,already_downloaded, num_of_docs, idx, 
+                                       corrupted_docs_list):
                 continue
             log.info(f"{idx}/{num_of_docs} Downloading {entry['FilePath']}")
             file_name=download_doc(source_name, entry)
@@ -92,6 +87,42 @@ def download_one_page_docs(source_name:str, skip_token:str)->str:
     if "odata.nextLink" in response.json():
         return response.json()["odata.nextLink"], errors_list
     return None, errors_list
+
+
+def handle_or_skip_docs(entry, already_downloaded, num_of_docs, idx, corrupted_docs_list):
+    # Skip file if previously donwloaded 
+    file_path=entry['FilePath']
+    if file_path.split("/")[-1] in already_downloaded:
+        log.info(f"{idx}/{num_of_docs} {entry['FilePath']} already downloaded")
+        return False
+    if file_path.split(".").pop() not in ms_words_suffix:
+        log.info(f"Skipping non MS Word doc {entry['FilePath']}")
+        return False
+    if file_path.split("/")[-1] in corrupted_docs_list:
+        log.info("Skipping corrupted documnet")
+        return False
+    return True
+
+def get_docs_list(source_name:str, skip_token:str):
+    url=f"{main_hypelink}{source_name}?${odata_download_format}"
+    # Paging through the ODATA
+    if skip_token:
+        token=skip_token.split("?$")[1]
+        url=f"{url}&${token}"
+    log.info(f"*** Download main ODATA {url} ***")
+    # Call ODATA API
+    while True:
+        response=requests.get(url=url)    
+        if 'value' not in response.json():
+            log.info(f"No 'valeue' key on response.json")
+            log.info(response.json())
+            time.sleep(10)
+            continue
+        break
+
+    num_of_docs=len(response.json()['value'])
+    log.info(f"*** {num_of_docs} documents to download ***")
+    return response, num_of_docs
 
 def get_already_downloaded(source):
     already_downloaded= os.listdir(f"{source}_extracted_texts")
@@ -157,10 +188,15 @@ def read_old_msword_doc(source_name:str, file_path):
     """
     Text extraction from Old word format, non OXML
     """
+    output_text=""
+    if word_application==None:
+        init_word_app()    
     
-    #word_application = win32com.client.Dispatch('Word.Application')
-    doc = word_application.Documents.Open(os.path.join(os.getcwd(), f"{source_name}_docs", file_path))
-    full_text = []
+    doc=open_word_doc(source_name, file_path)
+    if doc==None:
+        log.info("Failed to open doc")
+        return
+    
     output_text=doc.Range().Text
     ''' Old, slower extraction method '''
     # for paragraph in doc.Paragraphs:
@@ -170,24 +206,56 @@ def read_old_msword_doc(source_name:str, file_path):
     # Extract text from Text Box, which appears on
     # old Knesset documents, originaly extracted from TIFF / PDF images
     # using OCR.
+    text_boxes_texts = []
     for shape in doc.Shapes:
-        # Check if the shape is a textbox
+        # Check if there is textboxs
         if shape.Type == 17:  # 17 represents a textbox shape
             # Extract text from the textbox
             text = shape.TextFrame.TextRange.Text
-            full_text.append(text)
-    if len(full_text)>0:
-        output_text="\n".join([ t for t in full_text if len(t.strip())>0])        
+            text_boxes_texts.append(text)
+    filtered_text=[w for w in text_boxes_texts if w.strip()]
+    if len(filtered_text)>0:
+        output_text=output_text+ " " +'\n'.join([ t for t in text_boxes_texts if len(t.strip())>0])        
     doc.Close(False)    
     log.info(f"\t{len(output_text.split())} words on doc")
     #word_application.Quit()    
-    if len(output_text)==0:
+    if len(output_text.strip())==0:
         log.info("No text found in documet")
         return
     output_path=os.path.join(os.getcwd(), f"{source_name}_extracted_texts", f"{file_path}.txt")
     with open(output_path, "w", encoding="utf-8") as _fout:
         _fout.write(output_text)
     
+    return
+
+def open_word_doc(source_name, file_path):
+    try:
+        #file_path=f"19_cs_bg_325715.doc"
+        document_path = os.path.join(os.getcwd(), f"{source_name}_docs", file_path)
+        doc = word_application.Documents.Open(document_path, ReadOnly=True)
+        return doc
+    except Exception as err:
+        log.exception(err)
+        add_doc_to_corrupted_docs_list(file_path)
+        init_word_app()
+    return None
+    
+
+def init_word_app():
+    # Main object to open MS WORD docs with
+    global word_application
+    word_application = win32com.client.gencache.EnsureDispatch('Word.Application')   
+    # Avoid actualy open the docs- all work should be done in the background
+    word_application.Visible=False
+
+    # This cal init word with late binding, the code above int early binding
+    # word_application = win32com.client.Dispatch('Word.Application')
+
+def add_doc_to_corrupted_docs_list(file_path):
+    _df=pd.read_csv(corrupted_docs_log)
+    new_df=pd.DataFrame([{"doc_name":file_path}])
+    _df2=pd.concat([_df, new_df])
+    _df2.to_csv(corrupted_docs_log, index=False)
     return
 
 def log_erros(errors_list):
@@ -208,10 +276,9 @@ def mkdir_per_source(source:str):
 
 # Main call
 # Datasource to download from
-datasets_sources=[plenum_session_ref, committees_sessions,  bills]
+datasets_sources=[committees_sessions, plenum_session_ref,   bills]
 # Skip tokens per source-not to re-iterate all pages
-skip_tokens=[ "?$skiptoken=255831L", None, "?$skiptoken=497312L"]
-
+skip_tokens=[ "?$skiptoken=311973L", "?$skiptoken=4099505L",  "?$skiptoken=497312L"]
 
 for idx, source in enumerate(datasets_sources):
     _query=f"https://knesset.gov.il/Odata/ParliamentInfo.svc/{source}/$count"
