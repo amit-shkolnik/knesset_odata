@@ -4,6 +4,7 @@ import requests
 import pandas as pd
 import time
 from pywintypes import com_error
+import tabulate
 
 from logger_configurer import configure_logger
 
@@ -21,7 +22,7 @@ committees_sessions="KNS_DocumentCommitteeSession"
 bills="KNS_DocumentBill"
 
 odata_download_format="format=json"
-ms_words_suffix=["doc", "DOC", "docx", "DOCX"]
+ms_words_suffix=["doc", "DOC", "docx", "DOCX"] #, "rtf"]
 
 word_application=None 
 # Documents corrupted previously downloaded
@@ -274,11 +275,40 @@ def mkdir_per_source(source:str):
     if not os.path.exists(f"{source}_extracted_texts"):
         os.makedirs(f"{source}_extracted_texts")
 
+def summerize_content()():
+    _rslts=[]
+    for idx, source in enumerate(datasets_sources):
+        source_text=[]
+        source_total_size=0
+        number_of_words=0
+        _dir=f"{source}_extracted_texts"
+        files=os.listdir(_dir)
+        log.info(f"Number of files in {source}: {len(files)}")
+        for idx2, _file in enumerate(files):
+            file_path=os.path.join(f"{source}_extracted_texts", _file)
+            with open(file_path, "r", encoding="utf-8") as file_open:
+                file_text=file_open.read()
+                number_of_words=number_of_words+len(file_text.split())
+            source_total_size+=os.path.getsize(file_path)/1024**2
+            continue
+
+        _dict={
+            "source":source,
+            "number of files": len(files),
+            "volumne (KB)": round(source_total_size, 0),
+            "number of words": number_of_words
+        }
+  
+        _rslts.append(_dict)
+  
+        continue
+    rslts_df=pd.DataFrame(_rslts)
+    log.info(f"\n{rslts_df.to_markdown()}")
 # Main call
 # Datasource to download from
 datasets_sources=[committees_sessions, plenum_session_ref,   bills]
 # Skip tokens per source-not to re-iterate all pages
-skip_tokens=[ "?$skiptoken=311973L", "?$skiptoken=4099505L",  "?$skiptoken=497312L"]
+skip_tokens=[ "?$skiptoken=321264L", "?$skiptoken=4099505L",  "?$skiptoken=497312L"]
 
 for idx, source in enumerate(datasets_sources):
     _query=f"https://knesset.gov.il/Odata/ParliamentInfo.svc/{source}/$count"
@@ -291,4 +321,7 @@ for idx, source in enumerate(datasets_sources):
     download_dataset(source, skip_token=skip_tokens[idx])
     continue
 
+summerize_content()()
+
 word_application.Quit()
+
