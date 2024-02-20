@@ -1,3 +1,12 @@
+'''
+Script download Knesset (https://main.knesset.gov.il/EN/Pages/default.aspx)
+ODATA from 3 sources:
+* Plenum
+* Legislation processes (Bills)
+* Committees sessions
+Author: Amit Shkolnik, amit.shkolnik@gmail.com, 2024
+'''
+
 import sys
 import os
 import requests
@@ -35,7 +44,11 @@ false_words=['\n', '\r']
 def download_dataset(source_name, skip_token:str):
     """
     Download documents from 1 source (Plenum, committees, etc),
-    Paging API (100 documents per page)
+    Paging API (100 documents per page).
+    Parameters:
+    * source: Knesset source to download from.
+    * skip_token: string, if not None, script skip all 
+        pages to the skip_token page.
     """
     try:
         # Skip token used for paging between Knesset ODATA API pages.    
@@ -91,7 +104,10 @@ def download_one_page_docs(source_name:str, skip_token:str, corrupted_docs_list)
 
 
 def handle_or_skip_docs(entry, already_downloaded, num_of_docs, idx, corrupted_docs_list):
-    # Skip file if previously donwloaded 
+    """
+    Decide to skip file if previously donwloaded, format is not handled
+    or document is corrupted
+    """
     file_path=entry['FilePath']
     if file_path.split("/")[-1] in already_downloaded:
         log.info(f"{idx}/{num_of_docs} {entry['FilePath']} already downloaded")
@@ -105,6 +121,9 @@ def handle_or_skip_docs(entry, already_downloaded, num_of_docs, idx, corrupted_d
     return True
 
 def get_docs_list(source_name:str, skip_token:str):
+    """
+    HTTP request to get 1 page from Knesset ODATA.
+    """
     url=f"{main_hypelink}{source_name}?${odata_download_format}"
     # Paging through the ODATA
     if skip_token:
@@ -126,6 +145,10 @@ def get_docs_list(source_name:str, skip_token:str):
     return response, num_of_docs
 
 def get_already_downloaded(source):
+    """
+    Avoiding re-download documents by watching a list of 
+    previously dowloaded docs.
+    """
     already_downloaded= os.listdir(f"{source}_extracted_texts")
     for idx, doc in enumerate(already_downloaded):
         already_downloaded[idx]=doc.replace(".txt", "")
@@ -150,7 +173,8 @@ def log_documents(source_name:str, documents_log_list:list):
 
 def download_doc(source:str, entry:dict):
     """
-    Download and save documents in original format
+    Download document in original format,
+    save it to local folder
     """
     url=entry["FilePath"]
     response=requests.get(url)    
@@ -169,8 +193,7 @@ def extract_text_from_doc(source_name:str, file_name:str):
     """
     Extract text from downloaded document management method.
     Handle per document format: .doc, .docx, .pdf, etc.
-    """
-    
+    """    
     if file_name.lower().split(".")[len(file_name.split("."))-1] in ms_words_suffix:
         extract_text_from_ms_word(source_name, file_name)
         log.info("Document's text successfuly extracted")
@@ -182,12 +205,12 @@ def extract_text_from_doc(source_name:str, file_name:str):
 def  extract_text_from_ms_word(source_name:str, file_name:str):
     # Old .doc format, non OXML files.
     if file_name.lower().split(".").pop() in ms_words_suffix:
-        return read_old_msword_doc(source_name, file_name)    
+        return read_msword_with_win32com(source_name, file_name)    
    
 
-def read_old_msword_doc(source_name:str, file_path):
+def read_msword_with_win32com(source_name:str, file_path):
     """
-    Text extraction from Old word format, non OXML
+    Text extraction from MS WORD
     """
     output_text=""
     if word_application==None:
@@ -275,7 +298,11 @@ def mkdir_per_source(source:str):
     if not os.path.exists(f"{source}_extracted_texts"):
         os.makedirs(f"{source}_extracted_texts")
 
-def summerize_content()():
+def summerize_content():
+    """
+    Count number of files, words and disk volume 
+    downloaded from Knesset ODATA
+    """
     _rslts=[]
     for idx, source in enumerate(datasets_sources):
         source_text=[]
@@ -290,12 +317,15 @@ def summerize_content()():
                 file_text=file_open.read()
                 number_of_words=number_of_words+len(file_text.split())
             source_total_size+=os.path.getsize(file_path)/1024**2
+            if idx2%5000==0:
+                log.info("End counting {} fles, {} MB, {} words".
+                         format(idx2, round(source_total_size,0 ), number_of_words))
             continue
 
         _dict={
             "source":source,
             "number of files": len(files),
-            "volumne (KB)": round(source_total_size, 0),
+            "volume (MB)": round(source_total_size, 0),
             "number of words": number_of_words
         }
   
@@ -304,12 +334,18 @@ def summerize_content()():
         continue
     rslts_df=pd.DataFrame(_rslts)
     log.info(f"\n{rslts_df.to_markdown()}")
-# Main call
-# Datasource to download from
-datasets_sources=[committees_sessions, plenum_session_ref,   bills]
-# Skip tokens per source-not to re-iterate all pages
-skip_tokens=[ "?$skiptoken=321264L", "?$skiptoken=4099505L",  "?$skiptoken=497312L"]
 
+
+######################################################################
+# Main call                                                          #
+######################################################################    
+# Datasource to download from    
+datasets_sources=[committees_sessions, plenum_session_ref,   bills]
+# Skip tokens per source-not to re-iterate all pages, like:
+# skip_tokens=[ "?$skiptoken=321264L", "?$skiptoken=4099505L",  "?$skiptoken=497312L"]
+skip_tokens=[ None, None, None]
+
+# Check number of files on each source:
 for idx, source in enumerate(datasets_sources):
     _query=f"https://knesset.gov.il/Odata/ParliamentInfo.svc/{source}/$count"
     _response=requests.get(_query)
@@ -321,7 +357,7 @@ for idx, source in enumerate(datasets_sources):
     download_dataset(source, skip_token=skip_tokens[idx])
     continue
 
-summerize_content()()
+summerize_content()
 
 word_application.Quit()
 
