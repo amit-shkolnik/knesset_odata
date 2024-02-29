@@ -19,7 +19,7 @@ def configure_logger(name):
                 'stream': 'ext://sys.stdout'
             },
             'file': {
-                'level': 'DEBUG',
+                'level': config.log_level,
                 'class': 'logging.handlers.RotatingFileHandler',
                 'formatter': 'default',
                 'filename': config.log_file,
@@ -29,7 +29,7 @@ def configure_logger(name):
         },
         'loggers': {
             'default': {
-                'level': 'DEBUG',
+                'level': config.log_level,
                 'handlers': ['console', 'file']
             }
         },

@@ -33,7 +33,7 @@ class DownloadKnesetCorpus():
             ######################################################################    
             # Skip tokens per source-not to re-iterate all pages, like:
             # skip_tokens=[ "?$skiptoken=321264L", "?$skiptoken=4099505L",  "?$skiptoken=497312L"]
-            skip_tokens=[ None, None, None]
+            skip_tokens=[ "?$skiptoken=4165495L", None, None]
 
             # Check number of files on each source:
             for idx, source in enumerate(config.datasets_sources):

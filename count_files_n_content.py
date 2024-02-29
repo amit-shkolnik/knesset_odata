@@ -21,10 +21,12 @@ class CountFilesNContent():
     def count_files_per_knesset(self):
         jsons_dfs, urls_list=self.json_to_dfs()
         for idx, json_df in enumerate(jsons_dfs):
-            jsons_dfs[idx]=self.prepare_json_df(json_df, urls_list[idx])
+            jsons_dfs[idx]=self.add_metadata_to_json_df(json_df, urls_list[idx])
 
         full_df=pd.concat(jsons_dfs)
         self.log.info(f"{len(full_df)} records on all sources")
+        full_df.drop_duplicates(keep='first', inplace=True)
+        self.log.info(f"{len(full_df)} records after drop duplicates")
 
         source_counts_list=[]
         for source in config.datasets_sources:
@@ -54,13 +56,45 @@ class CountFilesNContent():
             urls_list.append(_url)
         return jsons_dfs, urls_list
 
-    def prepare_json_df(self, _df:pd.DataFrame, url:str):
-        _df["source"]=url.split("$metadata#")[1]
-        _df["knesset_num"]=_df.apply(lambda x:
-            x["FilePath"].split("https://fs.knesset.gov.il//")[1].split("/")[0], axis=1)
-        _df["file_format"]=_df.apply(lambda x: x["FilePath"].split(".")[-1].lower(),axis=1)
+    def add_metadata_to_json_df(self, _df:pd.DataFrame, url:str):
+        
+        try:
+            # Not all records contains Knesset number, some records are like:
+            # https://fs.knesset.gov.il///FILER/E_SHARE/WMA_POOL/14/2013_04_29/2013_04_29_15_59_50_18_56_51_19.wmv
+            knesseet_num=-1
+            for row_index, row in _df.iterrows():
+                if "https://fs.knesset.gov.il//" in row["FilePath"]:
+                    candidate= row["FilePath"].split(
+                        "https://fs.knesset.gov.il//")[1].split("/")[0] 
+                    try:
+                        candidate=int(candidate)
+                        if candidate<50:
+                            knesseet_num=candidate
+                            break
+                    except Exception as err:
+                        continue
 
-        return _df
+            _df["source"]=url.split("$metadata#")[1]
+            _df["knesset_num"]=knesseet_num
+            
+            # _df.apply(lambda x:
+            #     x["FilePath"].split("https://fs.knesset.gov.il//")[1].split("/")[0] \
+            #         if "https://fs.knesset.gov.il//" in x["FilePath"] else default_knesset, axis=1)
+            _df["file_format"]=_df.apply(lambda x: self.get_file_format(x),axis=1)
+            
+            return _df
+
+        except Exception as err:
+            self.log.exception(err)
+            return _df
+
+    def get_file_format(self, row:pd.Series):
+        file_extension=row["FilePath"].split(".")[-1].lower()
+        if "aspx" in file_extension:
+            file_extension="aspx"
+        return file_extension
+
+
 
     def count_source_per_knesset(self, jsons_df:pd.DataFrame, source:str):
         source_records=jsons_df.loc[jsons_df["source"]==source]
