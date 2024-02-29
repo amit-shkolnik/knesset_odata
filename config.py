@@ -34,7 +34,7 @@ committees_sessions="KNS_DocumentCommitteeSession"
 bills="KNS_DocumentBill"
 
 # Datasource to download from    
-datasets_sources=[plenum_session_ref, committees_sessions, bills]
+datasets_sources=[bills, plenum_session_ref, committees_sessions]
 
 # Knesset ODATA site
 main_hypelink="http://knesset.gov.il/Odata/ParliamentInfo.svc/"

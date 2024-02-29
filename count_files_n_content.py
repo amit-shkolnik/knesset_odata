@@ -22,19 +22,23 @@ class CountFilesNContent():
         jsons_dfs, urls_list=self.json_to_dfs()
         for idx, json_df in enumerate(jsons_dfs):
             jsons_dfs[idx]=self.add_metadata_to_json_df(json_df, urls_list[idx])
-
+            if idx%500==0:
+                self.log.info(f"{idx} metadata added to DFs")
         full_df=pd.concat(jsons_dfs)
         self.log.info(f"{len(full_df)} records on all sources")
         full_df.drop_duplicates(keep='first', inplace=True)
         self.log.info(f"{len(full_df)} records after drop duplicates")
 
-        source_counts_list=[]
+        source_counts_dict={}
         for source in config.datasets_sources:
             source_counts=self.count_source_per_knesset(full_df, source)
-            source_counts_list.append(source_counts)
+            source_counts_dict[source]=source_counts
 
-        for source in source_counts_list:
-            self.log.info(f"\n{source.to_markdown()}")
+        for source, source_df in source_counts_dict.items():
+            self.log.info(f"SUMMARY FOR {source}")
+            self.log.info(f"\n{source_df.to_markdown()}")
+            _file=f"{source}_summary_per_knesset.csv"
+            source_df.to_csv(_file)
 
         return
     
@@ -54,10 +58,11 @@ class CountFilesNContent():
             _df=pd.DataFrame(_value)
             jsons_dfs.append(_df)
             urls_list.append(_url)
+            if idx%500==0:
+                self.log.info(f"{idx} json files processed")
         return jsons_dfs, urls_list
 
-    def add_metadata_to_json_df(self, _df:pd.DataFrame, url:str):
-        
+    def add_metadata_to_json_df(self, _df:pd.DataFrame, url:str):        
         try:
             # Not all records contains Knesset number, some records are like:
             # https://fs.knesset.gov.il///FILER/E_SHARE/WMA_POOL/14/2013_04_29/2013_04_29_15_59_50_18_56_51_19.wmv
@@ -127,7 +132,7 @@ class CountFilesNContent():
                     number_of_words=number_of_words+len(file_text.split())
                 source_total_size+=os.path.getsize(file_path)/1024**2
                 if idx2%5000==0:
-                    log.info("End counting {} fles, {} MB, {} words".
+                    log.info("End counting {} files, {} MB, {} words".
                             format(idx2, round(source_total_size,0 ), number_of_words))
                 continue
 

@@ -33,7 +33,7 @@ class DownloadKnesetCorpus():
             ######################################################################    
             # Skip tokens per source-not to re-iterate all pages, like:
             # skip_tokens=[ "?$skiptoken=321264L", "?$skiptoken=4099505L",  "?$skiptoken=497312L"]
-            skip_tokens=[ "?$skiptoken=4165495L", None, None]
+            skip_tokens=[None, None, None]
 
             # Check number of files on each source:
             for idx, source in enumerate(config.datasets_sources):
@@ -111,6 +111,8 @@ class DownloadKnesetCorpus():
             except Exception as err:
                 log.exception(err)
                 errors_list.append({"doc":entry, "error":err})
+                # Case err.strerror is 'Call was rejected by callee' sleep() might recover it.
+                time.sleep(10)
                 continue
             continue
         self.log.info("{} downloaded {} already downloaded, {} not WORD format, {} corrupted ".format(
@@ -282,6 +284,7 @@ class DownloadKnesetCorpus():
             #file_path=f"19_cs_bg_325715.doc"
             document_path = os.path.join(os.getcwd(), f"{source_name}_docs", file_path)
             doc = word_application.Documents.Open(document_path, ReadOnly=True)
+            
             return doc
         except Exception as err:
             log.exception(err)
