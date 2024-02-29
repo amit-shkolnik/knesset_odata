@@ -11,3 +11,6 @@ Documents are stored in original format and extracted text in .txt files
 1. As application utilize 'win32com.client' its need to run on Windows OS.
 2. MS WORD
 
+# Usage
+1. DownloadKnesetCorpus class download all files from all sources.
+2. CountFilesNContent class count files per Knesset, per file format, and number of files, words & volume per source.
