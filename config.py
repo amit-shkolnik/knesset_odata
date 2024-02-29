@@ -3,6 +3,14 @@ import os as _os
 import platform
 import fileinput
 import datetime
+import requests
+import pandas as pd
+import time
+from pywintypes import com_error
+import tabulate
+import logging
+import json
+
 
 main_path=None
 
@@ -20,3 +28,24 @@ NOTSET 	0
 log_level='INFO'
 default='default'
 
+# Datasources on Knesset ODATA to be scraped.
+plenum_session_ref="KNS_DocumentPlenumSession"
+committees_sessions="KNS_DocumentCommitteeSession"
+bills="KNS_DocumentBill"
+
+# Datasource to download from    
+datasets_sources=[plenum_session_ref, committees_sessions, bills]
+
+# Knesset ODATA site
+main_hypelink="http://knesset.gov.il/Odata/ParliamentInfo.svc/"
+
+odata_download_format="format=json"
+ms_words_suffix=["doc", "DOC", "docx", "DOCX"] #, "rtf"]
+
+# Documents corrupted previously downloaded
+# and can't be open via 'Word'   
+corrupted_docs_log="corrupted_docs_log.csv"
+
+false_words=['\n', '\r']
+
+jsons_dir="odata_jsons"

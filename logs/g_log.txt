@@ -4212,3 +4212,1647 @@
 2024-02-20 15:42:51 - INFO - Skipping non MS Word doc https://fs.knesset.gov.il//20/Committees/20_cs_bg_324478.pdf
 2024-02-20 15:42:51 - INFO - 75/100 https://fs.knesset.gov.il//20/Committees/20_cs_bg_324483.docx already downloaded
 2024-02-20 15:43:19 - INFO - 76/100 Downloading https://fs.knesset.gov.il//20/Committees/20_cs_bg_324484.rtf
+2024-02-29 09:43:50 - INFO - Program start
+2024-02-29 09:44:25 - INFO - ** TOTAL 179396 documents on KNS_DocumentCommitteeSession **
+2024-02-29 09:44:29 - INFO - ** TOTAL 65148 documents on KNS_DocumentPlenumSession **
+2024-02-29 09:44:32 - INFO - ** TOTAL 93611 documents on KNS_DocumentBill **
+2024-02-29 09:44:41 - INFO - Downloading source KNS_DocumentCommitteeSession
+2024-02-29 09:45:15 - INFO - *** ROUND 1 ***
+2024-02-29 09:45:42 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentCommitteeSession?$format=json ***
+2024-02-29 09:45:49 - INFO - *** 100 documents to download ***
+2024-02-29 09:46:50 - INFO - Program start
+2024-02-29 09:46:52 - INFO - ** TOTAL 179396 documents on KNS_DocumentCommitteeSession **
+2024-02-29 09:46:53 - INFO - ** TOTAL 65148 documents on KNS_DocumentPlenumSession **
+2024-02-29 09:46:55 - INFO - ** TOTAL 93611 documents on KNS_DocumentBill **
+2024-02-29 09:46:55 - INFO - Downloading source KNS_DocumentCommitteeSession
+2024-02-29 09:46:55 - INFO - *** ROUND 1 ***
+2024-02-29 09:46:55 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentCommitteeSession?$format=json ***
+2024-02-29 09:46:56 - INFO - *** 100 documents to download ***
+2024-02-29 09:49:18 - INFO - Program start
+2024-02-29 09:49:20 - INFO - ** TOTAL 179396 documents on KNS_DocumentCommitteeSession **
+2024-02-29 09:49:21 - INFO - ** TOTAL 65148 documents on KNS_DocumentPlenumSession **
+2024-02-29 09:49:22 - INFO - ** TOTAL 93611 documents on KNS_DocumentBill **
+2024-02-29 09:49:22 - INFO - Downloading source KNS_DocumentCommitteeSession
+2024-02-29 09:49:22 - INFO - *** ROUND 1 ***
+2024-02-29 09:49:22 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentCommitteeSession?$format=json ***
+2024-02-29 09:49:23 - INFO - *** 100 documents to download ***
+2024-02-29 09:50:13 - ERROR - write() argument must be str, not dict
+Traceback (most recent call last):
+  File "C:\repos\knesset_odata\download_knesset_corpus.py", line 82, in download_dataset
+    skip_token, errors_list=self.download_one_page_docs(
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\repos\knesset_odata\download_knesset_corpus.py", line 100, in download_one_page_docs
+    self.save_response_json(response, source_name, url)
+  File "C:\repos\knesset_odata\download_knesset_corpus.py", line 329, in save_response_json
+    file_open.write(response.json())
+TypeError: write() argument must be str, not dict
+2024-02-29 09:53:22 - INFO - Program start
+2024-02-29 09:53:23 - INFO - ** TOTAL 179396 documents on KNS_DocumentCommitteeSession **
+2024-02-29 09:53:24 - INFO - ** TOTAL 65148 documents on KNS_DocumentPlenumSession **
+2024-02-29 09:53:25 - INFO - ** TOTAL 93611 documents on KNS_DocumentBill **
+2024-02-29 09:53:25 - INFO - Downloading source KNS_DocumentCommitteeSession
+2024-02-29 09:53:25 - INFO - *** ROUND 1 ***
+2024-02-29 09:53:25 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentCommitteeSession?$format=json ***
+2024-02-29 09:53:27 - INFO - *** 100 documents to download ***
+2024-02-29 09:57:09 - INFO - Program start
+2024-02-29 09:57:10 - INFO - ** TOTAL 179397 documents on KNS_DocumentCommitteeSession **
+2024-02-29 09:57:11 - INFO - ** TOTAL 65148 documents on KNS_DocumentPlenumSession **
+2024-02-29 09:57:12 - INFO - ** TOTAL 93611 documents on KNS_DocumentBill **
+2024-02-29 09:57:12 - INFO - Downloading source KNS_DocumentCommitteeSession
+2024-02-29 09:57:12 - INFO - *** ROUND 1 ***
+2024-02-29 09:57:13 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentCommitteeSession?$format=json ***
+2024-02-29 09:57:13 - INFO - *** 100 documents to download ***
+2024-02-29 09:57:50 - INFO - Program start
+2024-02-29 09:57:51 - INFO - ** TOTAL 179397 documents on KNS_DocumentCommitteeSession **
+2024-02-29 09:57:52 - INFO - ** TOTAL 65148 documents on KNS_DocumentPlenumSession **
+2024-02-29 09:57:53 - INFO - ** TOTAL 93611 documents on KNS_DocumentBill **
+2024-02-29 09:57:53 - INFO - Downloading source KNS_DocumentCommitteeSession
+2024-02-29 09:57:53 - INFO - *** ROUND 1 ***
+2024-02-29 09:57:54 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentCommitteeSession?$format=json ***
+2024-02-29 09:57:54 - INFO - *** 100 documents to download ***
+2024-02-29 09:58:10 - ERROR - dump() missing 1 required positional argument: 'fp'
+Traceback (most recent call last):
+  File "C:\repos\knesset_odata\download_knesset_corpus.py", line 77, in download_dataset
+    skip_token, errors_list=self.download_one_page_docs(
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\repos\knesset_odata\download_knesset_corpus.py", line 95, in download_one_page_docs
+    self.save_response_json(response, source_name, url)
+  File "C:\repos\knesset_odata\download_knesset_corpus.py", line 323, in save_response_json
+    json_obj=json.dump( response.json())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: dump() missing 1 required positional argument: 'fp'
+2024-02-29 09:58:57 - INFO - Program start
+2024-02-29 09:58:58 - INFO - ** TOTAL 179397 documents on KNS_DocumentCommitteeSession **
+2024-02-29 09:58:59 - INFO - ** TOTAL 65148 documents on KNS_DocumentPlenumSession **
+2024-02-29 09:59:01 - INFO - ** TOTAL 93611 documents on KNS_DocumentBill **
+2024-02-29 09:59:01 - INFO - Downloading source KNS_DocumentCommitteeSession
+2024-02-29 09:59:01 - INFO - *** ROUND 1 ***
+2024-02-29 09:59:01 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentCommitteeSession?$format=json ***
+2024-02-29 09:59:02 - INFO - *** 100 documents to download ***
+2024-02-29 10:01:27 - INFO - 0/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71308.doc already downloaded
+2024-02-29 10:01:27 - INFO - 1/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71309.doc already downloaded
+2024-02-29 10:01:27 - INFO - 2/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71310.doc already downloaded
+2024-02-29 10:01:27 - INFO - 3/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71402.doc already downloaded
+2024-02-29 10:01:27 - INFO - 4/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71461.doc already downloaded
+2024-02-29 10:01:27 - INFO - 5/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71469.doc already downloaded
+2024-02-29 10:01:27 - INFO - 6/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71474.doc already downloaded
+2024-02-29 10:01:27 - INFO - 7/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71484.doc already downloaded
+2024-02-29 10:01:27 - INFO - 8/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71486.doc already downloaded
+2024-02-29 10:01:27 - INFO - 9/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71487.doc already downloaded
+2024-02-29 10:01:27 - INFO - 10/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71488.doc already downloaded
+2024-02-29 10:01:27 - INFO - 11/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71489.doc already downloaded
+2024-02-29 10:01:27 - INFO - 12/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71490.doc already downloaded
+2024-02-29 10:01:27 - INFO - 13/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71491.doc already downloaded
+2024-02-29 10:01:27 - INFO - 14/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71492.doc already downloaded
+2024-02-29 10:01:27 - INFO - 15/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71493.doc already downloaded
+2024-02-29 10:01:27 - INFO - 16/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71495.doc already downloaded
+2024-02-29 10:01:27 - INFO - 17/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71496.doc already downloaded
+2024-02-29 10:01:27 - INFO - 18/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71497.doc already downloaded
+2024-02-29 10:01:27 - INFO - 19/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71498.doc already downloaded
+2024-02-29 10:01:27 - INFO - 20/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71499.doc already downloaded
+2024-02-29 10:01:27 - INFO - 21/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71500.doc already downloaded
+2024-02-29 10:01:27 - INFO - 22/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71501.doc already downloaded
+2024-02-29 10:01:27 - INFO - 23/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71502.doc already downloaded
+2024-02-29 10:01:27 - INFO - 24/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71503.doc already downloaded
+2024-02-29 10:01:27 - INFO - 25/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71504.doc already downloaded
+2024-02-29 10:01:27 - INFO - 26/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71505.doc already downloaded
+2024-02-29 10:01:27 - INFO - 27/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71506.doc already downloaded
+2024-02-29 10:01:27 - INFO - 28/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71507.doc already downloaded
+2024-02-29 10:01:27 - INFO - 29/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71508.doc already downloaded
+2024-02-29 10:01:27 - INFO - 30/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71509.doc already downloaded
+2024-02-29 10:01:27 - INFO - 31/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71510.doc already downloaded
+2024-02-29 10:01:27 - INFO - 32/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71511.doc already downloaded
+2024-02-29 10:01:27 - INFO - 33/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71512.doc already downloaded
+2024-02-29 10:01:27 - INFO - 34/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71513.doc already downloaded
+2024-02-29 10:01:27 - INFO - 35/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71514.doc already downloaded
+2024-02-29 10:01:27 - INFO - 36/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71515.doc already downloaded
+2024-02-29 10:01:27 - INFO - 37/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71516.doc already downloaded
+2024-02-29 10:01:27 - INFO - 38/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71517.doc already downloaded
+2024-02-29 10:01:27 - INFO - 39/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71518.doc already downloaded
+2024-02-29 10:01:27 - INFO - 40/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71519.doc already downloaded
+2024-02-29 10:01:27 - INFO - 41/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71520.doc already downloaded
+2024-02-29 10:01:27 - INFO - 42/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71521.doc already downloaded
+2024-02-29 10:01:27 - INFO - 43/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71522.doc already downloaded
+2024-02-29 10:01:27 - INFO - 44/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71523.doc already downloaded
+2024-02-29 10:01:27 - INFO - 45/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71524.doc already downloaded
+2024-02-29 10:01:27 - INFO - 46/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71525.doc already downloaded
+2024-02-29 10:01:27 - INFO - 47/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71527.doc already downloaded
+2024-02-29 10:01:27 - INFO - 48/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71528.doc already downloaded
+2024-02-29 10:01:27 - INFO - 49/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71529.doc already downloaded
+2024-02-29 10:01:27 - INFO - 50/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71530.doc already downloaded
+2024-02-29 10:01:27 - INFO - 51/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71531.doc already downloaded
+2024-02-29 10:01:27 - INFO - 52/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71532.doc already downloaded
+2024-02-29 10:01:27 - INFO - 53/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71533.doc already downloaded
+2024-02-29 10:01:27 - INFO - 54/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71534.doc already downloaded
+2024-02-29 10:01:27 - INFO - 55/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71535.doc already downloaded
+2024-02-29 10:01:27 - INFO - 56/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71536.doc already downloaded
+2024-02-29 10:01:27 - INFO - 57/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71537.doc already downloaded
+2024-02-29 10:01:27 - INFO - 58/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71538.doc already downloaded
+2024-02-29 10:01:27 - INFO - 59/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71539.doc already downloaded
+2024-02-29 10:01:27 - INFO - 60/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71540.doc already downloaded
+2024-02-29 10:01:27 - INFO - 61/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71541.doc already downloaded
+2024-02-29 10:01:27 - INFO - 62/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71542.doc already downloaded
+2024-02-29 10:01:27 - INFO - 63/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71543.doc already downloaded
+2024-02-29 10:01:27 - INFO - 64/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71544.doc already downloaded
+2024-02-29 10:01:27 - INFO - 65/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71545.doc already downloaded
+2024-02-29 10:01:27 - INFO - 66/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71546.doc already downloaded
+2024-02-29 10:01:27 - INFO - 67/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71547.doc already downloaded
+2024-02-29 10:01:27 - INFO - 68/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71548.doc already downloaded
+2024-02-29 10:01:27 - INFO - 69/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71549.doc already downloaded
+2024-02-29 10:01:27 - INFO - 70/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71550.doc already downloaded
+2024-02-29 10:01:27 - INFO - 71/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71551.doc already downloaded
+2024-02-29 10:01:27 - INFO - 72/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71552.doc already downloaded
+2024-02-29 10:01:27 - INFO - 73/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71553.doc already downloaded
+2024-02-29 10:01:27 - INFO - 74/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71554.doc already downloaded
+2024-02-29 10:01:27 - INFO - 75/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71555.doc already downloaded
+2024-02-29 10:01:27 - INFO - 76/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71556.doc already downloaded
+2024-02-29 10:01:27 - INFO - 77/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71557.doc already downloaded
+2024-02-29 10:01:27 - INFO - 78/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71558.doc already downloaded
+2024-02-29 10:01:27 - INFO - 79/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71559.doc already downloaded
+2024-02-29 10:01:27 - INFO - 80/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71560.doc already downloaded
+2024-02-29 10:01:27 - INFO - 81/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71561.doc already downloaded
+2024-02-29 10:01:27 - INFO - 82/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71562.doc already downloaded
+2024-02-29 10:01:27 - INFO - 83/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71563.doc already downloaded
+2024-02-29 10:01:27 - INFO - 84/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71564.doc already downloaded
+2024-02-29 10:01:27 - INFO - 85/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71565.doc already downloaded
+2024-02-29 10:01:27 - INFO - 86/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71566.doc already downloaded
+2024-02-29 10:01:27 - INFO - 87/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71567.doc already downloaded
+2024-02-29 10:01:27 - INFO - 88/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71568.doc already downloaded
+2024-02-29 10:01:27 - INFO - 89/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71569.doc already downloaded
+2024-02-29 10:01:27 - INFO - 90/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71570.doc already downloaded
+2024-02-29 10:01:27 - INFO - 91/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71571.doc already downloaded
+2024-02-29 10:01:27 - INFO - 92/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71572.doc already downloaded
+2024-02-29 10:01:27 - INFO - 93/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71573.doc already downloaded
+2024-02-29 10:01:27 - INFO - 94/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71574.doc already downloaded
+2024-02-29 10:01:27 - INFO - 95/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71575.doc already downloaded
+2024-02-29 10:01:27 - INFO - 96/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71576.doc already downloaded
+2024-02-29 10:01:27 - INFO - 97/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71577.doc already downloaded
+2024-02-29 10:01:27 - INFO - 98/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71578.doc already downloaded
+2024-02-29 10:01:27 - INFO - 99/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71579.doc already downloaded
+2024-02-29 10:01:27 - INFO - *** ROUND 2 ***
+2024-02-29 10:01:27 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentCommitteeSession?$format=json&$skiptoken=72825L ***
+2024-02-29 10:01:28 - INFO - *** 100 documents to download ***
+2024-02-29 10:01:33 - INFO - 0/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71580.doc already downloaded
+2024-02-29 10:01:33 - INFO - 1/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71581.doc already downloaded
+2024-02-29 10:01:33 - INFO - 2/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71582.doc already downloaded
+2024-02-29 10:01:33 - INFO - 3/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71584.doc already downloaded
+2024-02-29 10:01:33 - INFO - 4/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71585.doc already downloaded
+2024-02-29 10:01:33 - INFO - 5/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71586.doc already downloaded
+2024-02-29 10:01:33 - INFO - 6/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71587.doc already downloaded
+2024-02-29 10:01:33 - INFO - 7/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71588.doc already downloaded
+2024-02-29 10:01:33 - INFO - 8/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71589.doc already downloaded
+2024-02-29 10:01:33 - INFO - 9/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71590.doc already downloaded
+2024-02-29 10:01:33 - INFO - 10/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71591.doc already downloaded
+2024-02-29 10:01:33 - INFO - 11/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71592.doc already downloaded
+2024-02-29 10:01:33 - INFO - 12/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71593.doc already downloaded
+2024-02-29 10:01:33 - INFO - 13/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71594.doc already downloaded
+2024-02-29 10:01:33 - INFO - 14/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71595.doc already downloaded
+2024-02-29 10:01:33 - INFO - 15/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71596.doc already downloaded
+2024-02-29 10:01:33 - INFO - 16/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71597.doc already downloaded
+2024-02-29 10:01:33 - INFO - 17/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71598.doc already downloaded
+2024-02-29 10:01:33 - INFO - 18/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71599.doc already downloaded
+2024-02-29 10:01:33 - INFO - 19/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71600.doc already downloaded
+2024-02-29 10:01:33 - INFO - 20/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71601.doc already downloaded
+2024-02-29 10:01:33 - INFO - 21/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71603.doc already downloaded
+2024-02-29 10:01:33 - INFO - 22/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71604.doc already downloaded
+2024-02-29 10:01:33 - INFO - 23/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71605.doc already downloaded
+2024-02-29 10:01:33 - INFO - 24/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71606.doc already downloaded
+2024-02-29 10:01:33 - INFO - 25/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71607.doc already downloaded
+2024-02-29 10:01:33 - INFO - 26/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71608.doc already downloaded
+2024-02-29 10:01:33 - INFO - 27/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71609.doc already downloaded
+2024-02-29 10:01:33 - INFO - 28/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71610.doc already downloaded
+2024-02-29 10:01:33 - INFO - 29/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71611.doc already downloaded
+2024-02-29 10:01:33 - INFO - 30/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71612.doc already downloaded
+2024-02-29 10:01:33 - INFO - 31/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71613.doc already downloaded
+2024-02-29 10:01:33 - INFO - 32/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71614.doc already downloaded
+2024-02-29 10:01:34 - INFO - 33/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71615.doc already downloaded
+2024-02-29 10:01:34 - INFO - 34/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71616.doc already downloaded
+2024-02-29 10:01:34 - INFO - 35/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71617.doc already downloaded
+2024-02-29 10:01:34 - INFO - 36/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71618.doc already downloaded
+2024-02-29 10:01:34 - INFO - 37/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71619.doc already downloaded
+2024-02-29 10:01:34 - INFO - 38/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71620.doc already downloaded
+2024-02-29 10:01:34 - INFO - 39/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71621.doc already downloaded
+2024-02-29 10:01:34 - INFO - 40/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71622.doc already downloaded
+2024-02-29 10:01:34 - INFO - 41/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71623.doc already downloaded
+2024-02-29 10:01:34 - INFO - 42/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71624.doc already downloaded
+2024-02-29 10:01:34 - INFO - 43/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71625.doc already downloaded
+2024-02-29 10:01:34 - INFO - 44/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71626.doc already downloaded
+2024-02-29 10:01:34 - INFO - 45/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71627.doc already downloaded
+2024-02-29 10:01:34 - INFO - 46/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71628.doc already downloaded
+2024-02-29 10:01:34 - INFO - 47/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71629.doc already downloaded
+2024-02-29 10:01:34 - INFO - 48/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71630.doc already downloaded
+2024-02-29 10:01:34 - INFO - 49/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71631.doc already downloaded
+2024-02-29 10:01:34 - INFO - 50/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71632.doc already downloaded
+2024-02-29 10:01:34 - INFO - 51/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71633.doc already downloaded
+2024-02-29 10:01:34 - INFO - 52/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71634.doc already downloaded
+2024-02-29 10:01:34 - INFO - 53/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71635.doc already downloaded
+2024-02-29 10:01:34 - INFO - 54/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71636.doc already downloaded
+2024-02-29 10:01:34 - INFO - 55/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71637.doc already downloaded
+2024-02-29 10:01:34 - INFO - 56/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71638.doc already downloaded
+2024-02-29 10:01:34 - INFO - 57/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71639.doc already downloaded
+2024-02-29 10:01:34 - INFO - 58/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71640.doc already downloaded
+2024-02-29 10:01:34 - INFO - 59/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71641.doc already downloaded
+2024-02-29 10:01:34 - INFO - 60/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71642.doc already downloaded
+2024-02-29 10:01:34 - INFO - 61/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71643.doc already downloaded
+2024-02-29 10:01:34 - INFO - 62/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71644.doc already downloaded
+2024-02-29 10:01:34 - INFO - 63/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71645.doc already downloaded
+2024-02-29 10:01:34 - INFO - 64/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71647.doc already downloaded
+2024-02-29 10:01:34 - INFO - 65/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71648.doc already downloaded
+2024-02-29 10:01:34 - INFO - 66/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71649.doc already downloaded
+2024-02-29 10:01:34 - INFO - 67/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71650.doc already downloaded
+2024-02-29 10:01:34 - INFO - 68/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71651.doc already downloaded
+2024-02-29 10:01:34 - INFO - 69/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71652.doc already downloaded
+2024-02-29 10:01:34 - INFO - 70/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71653.doc already downloaded
+2024-02-29 10:01:34 - INFO - 71/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71654.doc already downloaded
+2024-02-29 10:01:34 - INFO - 72/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71655.doc already downloaded
+2024-02-29 10:01:34 - INFO - 73/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71656.doc already downloaded
+2024-02-29 10:01:34 - INFO - 74/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71657.doc already downloaded
+2024-02-29 10:01:34 - INFO - 75/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71658.doc already downloaded
+2024-02-29 10:01:34 - INFO - 76/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71659.doc already downloaded
+2024-02-29 10:01:34 - INFO - 77/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71660.doc already downloaded
+2024-02-29 10:01:34 - INFO - 78/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71661.doc already downloaded
+2024-02-29 10:01:34 - INFO - 79/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71662.doc already downloaded
+2024-02-29 10:01:34 - INFO - 80/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71663.doc already downloaded
+2024-02-29 10:01:34 - INFO - 81/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71664.doc already downloaded
+2024-02-29 10:01:34 - INFO - 82/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71665.doc already downloaded
+2024-02-29 10:01:34 - INFO - 83/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71666.doc already downloaded
+2024-02-29 10:01:34 - INFO - 84/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71667.doc already downloaded
+2024-02-29 10:01:34 - INFO - 85/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71668.doc already downloaded
+2024-02-29 10:01:34 - INFO - 86/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71669.doc already downloaded
+2024-02-29 10:01:34 - INFO - 87/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71670.doc already downloaded
+2024-02-29 10:01:34 - INFO - 88/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71671.doc already downloaded
+2024-02-29 10:01:34 - INFO - 89/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71672.doc already downloaded
+2024-02-29 10:01:34 - INFO - 90/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71673.doc already downloaded
+2024-02-29 10:01:34 - INFO - 91/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71674.doc already downloaded
+2024-02-29 10:01:34 - INFO - 92/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71675.doc already downloaded
+2024-02-29 10:01:34 - INFO - 93/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71676.doc already downloaded
+2024-02-29 10:01:34 - INFO - 94/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71677.doc already downloaded
+2024-02-29 10:01:34 - INFO - 95/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71678.doc already downloaded
+2024-02-29 10:01:34 - INFO - 96/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71679.doc already downloaded
+2024-02-29 10:01:34 - INFO - 97/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71680.doc already downloaded
+2024-02-29 10:01:34 - INFO - 98/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71681.doc already downloaded
+2024-02-29 10:01:34 - INFO - 99/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71682.doc already downloaded
+2024-02-29 10:01:34 - INFO - *** ROUND 3 ***
+2024-02-29 10:01:34 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentCommitteeSession?$format=json&$skiptoken=73118L ***
+2024-02-29 10:01:35 - INFO - *** 100 documents to download ***
+2024-02-29 10:01:39 - INFO - 0/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71683.doc already downloaded
+2024-02-29 10:01:39 - INFO - 1/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71684.doc already downloaded
+2024-02-29 10:01:39 - INFO - 2/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71685.doc already downloaded
+2024-02-29 10:01:39 - INFO - 3/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71686.doc already downloaded
+2024-02-29 10:01:39 - INFO - 4/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71687.doc already downloaded
+2024-02-29 10:01:39 - INFO - 5/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71688.doc already downloaded
+2024-02-29 10:01:39 - INFO - 6/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71689.doc already downloaded
+2024-02-29 10:01:39 - INFO - 7/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71690.doc already downloaded
+2024-02-29 10:01:39 - INFO - 8/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71691.doc already downloaded
+2024-02-29 10:01:39 - INFO - 9/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71692.doc already downloaded
+2024-02-29 10:01:39 - INFO - 10/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71693.doc already downloaded
+2024-02-29 10:01:39 - INFO - 11/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71694.doc already downloaded
+2024-02-29 10:01:39 - INFO - 12/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71698.doc already downloaded
+2024-02-29 10:01:39 - INFO - 13/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71699.doc already downloaded
+2024-02-29 10:01:39 - INFO - 14/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71701.doc already downloaded
+2024-02-29 10:01:39 - INFO - 15/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71703.doc already downloaded
+2024-02-29 10:01:39 - INFO - 16/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71704.doc already downloaded
+2024-02-29 10:01:39 - INFO - 17/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71705.doc already downloaded
+2024-02-29 10:01:39 - INFO - 18/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71706.doc already downloaded
+2024-02-29 10:01:39 - INFO - 19/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71707.doc already downloaded
+2024-02-29 10:01:39 - INFO - 20/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71708.doc already downloaded
+2024-02-29 10:01:39 - INFO - 21/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71709.doc already downloaded
+2024-02-29 10:01:39 - INFO - 22/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71710.doc already downloaded
+2024-02-29 10:01:39 - INFO - 23/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71712.doc already downloaded
+2024-02-29 10:01:39 - INFO - 24/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71713.doc already downloaded
+2024-02-29 10:01:39 - INFO - 25/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71714.doc already downloaded
+2024-02-29 10:01:39 - INFO - 26/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71715.doc already downloaded
+2024-02-29 10:01:39 - INFO - 27/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71716.doc already downloaded
+2024-02-29 10:01:39 - INFO - 28/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71717.doc already downloaded
+2024-02-29 10:01:39 - INFO - 29/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71718.doc already downloaded
+2024-02-29 10:01:39 - INFO - 30/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71719.doc already downloaded
+2024-02-29 10:01:39 - INFO - 31/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71720.doc already downloaded
+2024-02-29 10:01:39 - INFO - 32/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71721.doc already downloaded
+2024-02-29 10:01:39 - INFO - 33/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71722.doc already downloaded
+2024-02-29 10:01:39 - INFO - 34/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71723.doc already downloaded
+2024-02-29 10:01:39 - INFO - 35/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71724.doc already downloaded
+2024-02-29 10:01:39 - INFO - 36/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71725.doc already downloaded
+2024-02-29 10:01:39 - INFO - 37/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71726.doc already downloaded
+2024-02-29 10:01:39 - INFO - 38/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71727.doc already downloaded
+2024-02-29 10:01:39 - INFO - 39/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71728.doc already downloaded
+2024-02-29 10:01:39 - INFO - 40/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71729.doc already downloaded
+2024-02-29 10:01:39 - INFO - 41/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71730.doc already downloaded
+2024-02-29 10:01:39 - INFO - 42/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71731.doc already downloaded
+2024-02-29 10:01:39 - INFO - 43/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71732.doc already downloaded
+2024-02-29 10:01:39 - INFO - 44/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71733.doc already downloaded
+2024-02-29 10:01:39 - INFO - 45/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71734.doc already downloaded
+2024-02-29 10:01:39 - INFO - 46/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71735.doc already downloaded
+2024-02-29 10:01:39 - INFO - 47/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71736.doc already downloaded
+2024-02-29 10:01:39 - INFO - 48/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71737.doc already downloaded
+2024-02-29 10:01:39 - INFO - 49/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71738.doc already downloaded
+2024-02-29 10:01:39 - INFO - 50/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71739.doc already downloaded
+2024-02-29 10:01:39 - INFO - 51/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71740.doc already downloaded
+2024-02-29 10:01:39 - INFO - 52/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71741.doc already downloaded
+2024-02-29 10:01:39 - INFO - 53/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71742.doc already downloaded
+2024-02-29 10:01:39 - INFO - 54/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71743.doc already downloaded
+2024-02-29 10:01:39 - INFO - 55/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71744.doc already downloaded
+2024-02-29 10:01:39 - INFO - 56/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71745.doc already downloaded
+2024-02-29 10:01:39 - INFO - 57/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71746.doc already downloaded
+2024-02-29 10:01:39 - INFO - 58/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71747.doc already downloaded
+2024-02-29 10:01:39 - INFO - 59/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71748.doc already downloaded
+2024-02-29 10:01:39 - INFO - 60/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71749.doc already downloaded
+2024-02-29 10:01:39 - INFO - 61/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71751.doc already downloaded
+2024-02-29 10:01:39 - INFO - 62/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71752.doc already downloaded
+2024-02-29 10:01:39 - INFO - 63/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71753.doc already downloaded
+2024-02-29 10:01:39 - INFO - 64/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71754.doc already downloaded
+2024-02-29 10:01:39 - INFO - 65/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71755.doc already downloaded
+2024-02-29 10:01:39 - INFO - 66/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71756.doc already downloaded
+2024-02-29 10:01:39 - INFO - 67/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71757.doc already downloaded
+2024-02-29 10:01:39 - INFO - 68/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71758.doc already downloaded
+2024-02-29 10:01:39 - INFO - 69/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71759.doc already downloaded
+2024-02-29 10:01:39 - INFO - 70/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71760.doc already downloaded
+2024-02-29 10:01:39 - INFO - 71/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71761.doc already downloaded
+2024-02-29 10:01:39 - INFO - 72/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71762.doc already downloaded
+2024-02-29 10:01:39 - INFO - 73/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71763.doc already downloaded
+2024-02-29 10:01:39 - INFO - 74/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71764.doc already downloaded
+2024-02-29 10:01:39 - INFO - 75/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71765.doc already downloaded
+2024-02-29 10:01:39 - INFO - 76/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71766.doc already downloaded
+2024-02-29 10:01:39 - INFO - 77/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71767.doc already downloaded
+2024-02-29 10:01:39 - INFO - 78/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71768.doc already downloaded
+2024-02-29 10:01:39 - INFO - 79/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71769.doc already downloaded
+2024-02-29 10:01:39 - INFO - 80/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71770.doc already downloaded
+2024-02-29 10:01:39 - INFO - 81/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71771.doc already downloaded
+2024-02-29 10:01:39 - INFO - 82/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71772.doc already downloaded
+2024-02-29 10:01:39 - INFO - 83/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71773.doc already downloaded
+2024-02-29 10:01:39 - INFO - 84/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71774.doc already downloaded
+2024-02-29 10:01:39 - INFO - 85/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71775.doc already downloaded
+2024-02-29 10:01:39 - INFO - 86/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71776.doc already downloaded
+2024-02-29 10:01:39 - INFO - 87/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71777.doc already downloaded
+2024-02-29 10:01:39 - INFO - 88/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71778.doc already downloaded
+2024-02-29 10:01:39 - INFO - 89/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71779.doc already downloaded
+2024-02-29 10:01:39 - INFO - 90/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71780.doc already downloaded
+2024-02-29 10:01:39 - INFO - 91/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71781.doc already downloaded
+2024-02-29 10:01:39 - INFO - 92/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71782.doc already downloaded
+2024-02-29 10:01:39 - INFO - 93/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71783.doc already downloaded
+2024-02-29 10:01:39 - INFO - 94/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71784.doc already downloaded
+2024-02-29 10:01:39 - INFO - 95/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71785.doc already downloaded
+2024-02-29 10:01:39 - INFO - 96/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71786.doc already downloaded
+2024-02-29 10:01:39 - INFO - 97/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71787.doc already downloaded
+2024-02-29 10:01:39 - INFO - 98/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71788.doc already downloaded
+2024-02-29 10:01:39 - INFO - 99/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71789.doc already downloaded
+2024-02-29 10:01:39 - INFO - *** ROUND 4 ***
+2024-02-29 10:01:40 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentCommitteeSession?$format=json&$skiptoken=73308L ***
+2024-02-29 10:01:41 - INFO - *** 100 documents to download ***
+2024-02-29 10:01:41 - INFO - 0/100 https://fs.knesset.gov.il//16/Committees/16_ptv_71790.doc already downloaded
+2024-02-29 10:01:41 - INFO - 1/100 https://fs.knesset.gov.il//16/Committees/16_ptv_129782.doc already downloaded
+2024-02-29 10:01:41 - INFO - 2/100 https://fs.knesset.gov.il//16/Committees/16_ptv_129793.doc already downloaded
+2024-02-29 10:01:41 - INFO - 3/100 https://fs.knesset.gov.il//16/Committees/16_ptv_129796.doc already downloaded
+2024-02-29 10:01:41 - INFO - 4/100 https://fs.knesset.gov.il//16/Committees/16_ptv_129799.doc already downloaded
+2024-02-29 10:01:41 - INFO - 5/100 https://fs.knesset.gov.il//16/Committees/16_ptv_129801.doc already downloaded
+2024-02-29 10:01:41 - INFO - 6/100 https://fs.knesset.gov.il//16/Committees/16_ptv_129807.doc already downloaded
+2024-02-29 10:01:41 - INFO - 7/100 https://fs.knesset.gov.il//16/Committees/16_ptv_129813.doc already downloaded
+2024-02-29 10:01:41 - INFO - 8/100 https://fs.knesset.gov.il//16/Committees/16_ptv_129854.doc already downloaded
+2024-02-29 10:01:41 - INFO - 9/100 https://fs.knesset.gov.il//16/Committees/16_ptv_129886.doc already downloaded
+2024-02-29 10:01:41 - INFO - 10/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130020.doc already downloaded
+2024-02-29 10:01:41 - INFO - 11/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130052.doc already downloaded
+2024-02-29 10:01:41 - INFO - 12/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130126.doc already downloaded
+2024-02-29 10:01:41 - INFO - 13/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130247.doc already downloaded
+2024-02-29 10:01:41 - INFO - 14/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130330.doc already downloaded
+2024-02-29 10:01:41 - INFO - 15/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130392.doc already downloaded
+2024-02-29 10:01:41 - INFO - 16/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130496.doc already downloaded
+2024-02-29 10:01:41 - INFO - 17/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130555.doc already downloaded
+2024-02-29 10:01:41 - INFO - 18/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130664.doc already downloaded
+2024-02-29 10:01:41 - INFO - 19/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130795.doc already downloaded
+2024-02-29 10:01:41 - INFO - 20/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130814.doc already downloaded
+2024-02-29 10:01:41 - INFO - 21/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130821.doc already downloaded
+2024-02-29 10:01:41 - INFO - 22/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130823.doc already downloaded
+2024-02-29 10:01:41 - INFO - 23/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130855.doc already downloaded
+2024-02-29 10:01:41 - INFO - 24/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130920.doc already downloaded
+2024-02-29 10:01:41 - INFO - 25/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130933.doc already downloaded
+2024-02-29 10:01:41 - INFO - 26/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130944.doc already downloaded
+2024-02-29 10:01:41 - INFO - 27/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130946.doc already downloaded
+2024-02-29 10:01:41 - INFO - 28/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130948.doc already downloaded
+2024-02-29 10:01:41 - INFO - 29/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130956.doc already downloaded
+2024-02-29 10:01:41 - INFO - 30/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130957.doc already downloaded
+2024-02-29 10:01:41 - INFO - 31/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130958.doc already downloaded
+2024-02-29 10:01:41 - INFO - 32/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130959.doc already downloaded
+2024-02-29 10:01:41 - INFO - 33/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130960.doc already downloaded
+2024-02-29 10:01:41 - INFO - 34/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130961.doc already downloaded
+2024-02-29 10:01:41 - INFO - 35/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130962.doc already downloaded
+2024-02-29 10:01:41 - INFO - 36/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130963.doc already downloaded
+2024-02-29 10:01:41 - INFO - 37/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130965.doc already downloaded
+2024-02-29 10:01:41 - INFO - 38/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130966.doc already downloaded
+2024-02-29 10:01:41 - INFO - 39/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130967.doc already downloaded
+2024-02-29 10:01:41 - INFO - 40/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130968.doc already downloaded
+2024-02-29 10:01:41 - INFO - 41/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130969.doc already downloaded
+2024-02-29 10:01:41 - INFO - 42/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130970.doc already downloaded
+2024-02-29 10:01:41 - INFO - 43/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130971.doc already downloaded
+2024-02-29 10:01:41 - INFO - 44/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130972.doc already downloaded
+2024-02-29 10:01:41 - INFO - 45/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130976.doc already downloaded
+2024-02-29 10:01:41 - INFO - 46/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130977.doc already downloaded
+2024-02-29 10:01:41 - INFO - 47/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130978.doc already downloaded
+2024-02-29 10:01:41 - INFO - 48/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130979.doc already downloaded
+2024-02-29 10:01:41 - INFO - 49/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130980.doc already downloaded
+2024-02-29 10:01:41 - INFO - 50/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130981.doc already downloaded
+2024-02-29 10:01:41 - INFO - 51/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130982.doc already downloaded
+2024-02-29 10:01:41 - INFO - 52/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130983.doc already downloaded
+2024-02-29 10:01:41 - INFO - 53/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130984.doc already downloaded
+2024-02-29 10:01:41 - INFO - 54/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130985.doc already downloaded
+2024-02-29 10:01:41 - INFO - 55/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130987.doc already downloaded
+2024-02-29 10:01:41 - INFO - 56/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130989.doc already downloaded
+2024-02-29 10:01:41 - INFO - 57/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130991.doc already downloaded
+2024-02-29 10:01:41 - INFO - 58/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130992.doc already downloaded
+2024-02-29 10:01:41 - INFO - 59/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130993.doc already downloaded
+2024-02-29 10:01:41 - INFO - 60/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130994.doc already downloaded
+2024-02-29 10:01:41 - INFO - 61/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130995.doc already downloaded
+2024-02-29 10:01:41 - INFO - 62/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130996.doc already downloaded
+2024-02-29 10:01:41 - INFO - 63/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130997.doc already downloaded
+2024-02-29 10:01:41 - INFO - 64/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130998.doc already downloaded
+2024-02-29 10:01:41 - INFO - 65/100 https://fs.knesset.gov.il//16/Committees/16_ptv_130999.doc already downloaded
+2024-02-29 10:01:41 - INFO - 66/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131000.doc already downloaded
+2024-02-29 10:01:41 - INFO - 67/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131001.doc already downloaded
+2024-02-29 10:01:41 - INFO - 68/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131002.doc already downloaded
+2024-02-29 10:01:41 - INFO - 69/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131003.doc already downloaded
+2024-02-29 10:01:41 - INFO - 70/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131004.doc already downloaded
+2024-02-29 10:01:41 - INFO - 71/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131005.doc already downloaded
+2024-02-29 10:01:41 - INFO - 72/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131006.doc already downloaded
+2024-02-29 10:01:41 - INFO - 73/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131007.doc already downloaded
+2024-02-29 10:01:41 - INFO - 74/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131008.doc already downloaded
+2024-02-29 10:01:41 - INFO - 75/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131009.doc already downloaded
+2024-02-29 10:01:41 - INFO - 76/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131010.doc already downloaded
+2024-02-29 10:01:41 - INFO - 77/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131011.doc already downloaded
+2024-02-29 10:01:41 - INFO - 78/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131012.doc already downloaded
+2024-02-29 10:01:41 - INFO - 79/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131014.doc already downloaded
+2024-02-29 10:01:41 - INFO - 80/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131015.doc already downloaded
+2024-02-29 10:01:41 - INFO - 81/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131016.doc already downloaded
+2024-02-29 10:01:41 - INFO - 82/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131020.doc already downloaded
+2024-02-29 10:01:41 - INFO - 83/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131021.doc already downloaded
+2024-02-29 10:01:41 - INFO - 84/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131022.doc already downloaded
+2024-02-29 10:01:41 - INFO - 85/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131023.doc already downloaded
+2024-02-29 10:01:41 - INFO - 86/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131024.doc already downloaded
+2024-02-29 10:01:41 - INFO - 87/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131025.doc already downloaded
+2024-02-29 10:01:41 - INFO - 88/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131026.doc already downloaded
+2024-02-29 10:01:41 - INFO - 89/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131027.doc already downloaded
+2024-02-29 10:01:41 - INFO - 90/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131028.doc already downloaded
+2024-02-29 10:01:41 - INFO - 91/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131029.doc already downloaded
+2024-02-29 10:01:41 - INFO - 92/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131031.doc already downloaded
+2024-02-29 10:01:41 - INFO - 93/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131032.doc already downloaded
+2024-02-29 10:01:41 - INFO - 94/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131033.doc already downloaded
+2024-02-29 10:01:41 - INFO - 95/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131034.doc already downloaded
+2024-02-29 10:01:41 - INFO - 96/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131035.doc already downloaded
+2024-02-29 10:01:41 - INFO - 97/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131036.doc already downloaded
+2024-02-29 10:01:41 - INFO - 98/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131037.doc already downloaded
+2024-02-29 10:01:41 - INFO - 99/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131038.doc already downloaded
+2024-02-29 10:01:41 - INFO - *** ROUND 5 ***
+2024-02-29 10:01:41 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentCommitteeSession?$format=json&$skiptoken=132556L ***
+2024-02-29 10:01:42 - INFO - *** 100 documents to download ***
+2024-02-29 10:01:42 - INFO - 0/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131039.doc already downloaded
+2024-02-29 10:01:42 - INFO - 1/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131040.doc already downloaded
+2024-02-29 10:01:42 - INFO - 2/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131041.doc already downloaded
+2024-02-29 10:01:42 - INFO - 3/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131042.doc already downloaded
+2024-02-29 10:01:42 - INFO - 4/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131045.doc already downloaded
+2024-02-29 10:01:42 - INFO - 5/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131053.doc already downloaded
+2024-02-29 10:01:42 - INFO - 6/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131056.doc already downloaded
+2024-02-29 10:01:42 - INFO - 7/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131058.doc already downloaded
+2024-02-29 10:01:42 - INFO - 8/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131059.doc already downloaded
+2024-02-29 10:01:42 - INFO - 9/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131060.doc already downloaded
+2024-02-29 10:01:42 - INFO - 10/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131067.doc already downloaded
+2024-02-29 10:01:42 - INFO - 11/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131068.doc already downloaded
+2024-02-29 10:01:42 - INFO - 12/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131070.doc already downloaded
+2024-02-29 10:01:42 - INFO - 13/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131071.doc already downloaded
+2024-02-29 10:01:42 - INFO - 14/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131077.doc already downloaded
+2024-02-29 10:01:42 - INFO - 15/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131078.doc already downloaded
+2024-02-29 10:01:42 - INFO - 16/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131086.doc already downloaded
+2024-02-29 10:01:42 - INFO - 17/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131089.doc already downloaded
+2024-02-29 10:01:42 - INFO - 18/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131090.doc already downloaded
+2024-02-29 10:01:42 - INFO - 19/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131091.doc already downloaded
+2024-02-29 10:01:42 - INFO - 20/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131092.doc already downloaded
+2024-02-29 10:01:42 - INFO - 21/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131093.doc already downloaded
+2024-02-29 10:01:42 - INFO - 22/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131094.doc already downloaded
+2024-02-29 10:01:42 - INFO - 23/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131095.doc already downloaded
+2024-02-29 10:01:42 - INFO - 24/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131097.doc already downloaded
+2024-02-29 10:01:42 - INFO - 25/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131100.doc already downloaded
+2024-02-29 10:01:42 - INFO - 26/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131105.doc already downloaded
+2024-02-29 10:01:42 - INFO - 27/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131106.doc already downloaded
+2024-02-29 10:01:42 - INFO - 28/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131111.doc already downloaded
+2024-02-29 10:01:42 - INFO - 29/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131112.doc already downloaded
+2024-02-29 10:01:42 - INFO - 30/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131116.doc already downloaded
+2024-02-29 10:01:42 - INFO - 31/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131117.doc already downloaded
+2024-02-29 10:01:42 - INFO - 32/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131118.doc already downloaded
+2024-02-29 10:01:42 - INFO - 33/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131119.doc already downloaded
+2024-02-29 10:01:42 - INFO - 34/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131120.doc already downloaded
+2024-02-29 10:01:42 - INFO - 35/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131121.doc already downloaded
+2024-02-29 10:01:42 - INFO - 36/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131122.doc already downloaded
+2024-02-29 10:01:42 - INFO - 37/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131123.doc already downloaded
+2024-02-29 10:01:42 - INFO - 38/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131124.doc already downloaded
+2024-02-29 10:01:42 - INFO - 39/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131125.doc already downloaded
+2024-02-29 10:01:42 - INFO - 40/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131129.doc already downloaded
+2024-02-29 10:01:42 - INFO - 41/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131130.doc already downloaded
+2024-02-29 10:01:42 - INFO - 42/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131131.doc already downloaded
+2024-02-29 10:01:42 - INFO - 43/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131133.doc already downloaded
+2024-02-29 10:01:42 - INFO - 44/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131134.doc already downloaded
+2024-02-29 10:01:42 - INFO - 45/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131135.doc already downloaded
+2024-02-29 10:01:42 - INFO - 46/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131137.doc already downloaded
+2024-02-29 10:01:42 - INFO - 47/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131144.doc already downloaded
+2024-02-29 10:01:42 - INFO - 48/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131145.doc already downloaded
+2024-02-29 10:01:42 - INFO - 49/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131146.doc already downloaded
+2024-02-29 10:01:42 - INFO - 50/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131149.doc already downloaded
+2024-02-29 10:01:42 - INFO - 51/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131150.doc already downloaded
+2024-02-29 10:01:42 - INFO - 52/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131154.doc already downloaded
+2024-02-29 10:01:42 - INFO - 53/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131155.doc already downloaded
+2024-02-29 10:01:42 - INFO - 54/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131156.doc already downloaded
+2024-02-29 10:01:42 - INFO - 55/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131157.doc already downloaded
+2024-02-29 10:01:42 - INFO - 56/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131158.doc already downloaded
+2024-02-29 10:01:42 - INFO - 57/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131159.doc already downloaded
+2024-02-29 10:01:42 - INFO - 58/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131160.doc already downloaded
+2024-02-29 10:01:42 - INFO - 59/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131161.doc already downloaded
+2024-02-29 10:01:42 - INFO - 60/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131162.doc already downloaded
+2024-02-29 10:01:42 - INFO - 61/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131163.doc already downloaded
+2024-02-29 10:01:42 - INFO - 62/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131164.doc already downloaded
+2024-02-29 10:01:42 - INFO - 63/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131165.doc already downloaded
+2024-02-29 10:01:42 - INFO - 64/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131166.doc already downloaded
+2024-02-29 10:01:42 - INFO - 65/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131167.doc already downloaded
+2024-02-29 10:01:42 - INFO - 66/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131173.doc already downloaded
+2024-02-29 10:01:42 - INFO - 67/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131174.doc already downloaded
+2024-02-29 10:01:42 - INFO - 68/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131175.doc already downloaded
+2024-02-29 10:01:42 - INFO - 69/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131176.doc already downloaded
+2024-02-29 10:01:42 - INFO - 70/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131180.doc already downloaded
+2024-02-29 10:01:42 - INFO - 71/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131181.doc already downloaded
+2024-02-29 10:01:42 - INFO - 72/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131186.doc already downloaded
+2024-02-29 10:01:42 - INFO - 73/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131188.doc already downloaded
+2024-02-29 10:01:42 - INFO - 74/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131190.doc already downloaded
+2024-02-29 10:01:42 - INFO - 75/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131191.doc already downloaded
+2024-02-29 10:01:42 - INFO - 76/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131192.doc already downloaded
+2024-02-29 10:01:42 - INFO - 77/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131193.doc already downloaded
+2024-02-29 10:01:42 - INFO - 78/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131194.doc already downloaded
+2024-02-29 10:01:42 - INFO - 79/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131201.doc already downloaded
+2024-02-29 10:01:42 - INFO - 80/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131202.doc already downloaded
+2024-02-29 10:01:42 - INFO - 81/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131203.doc already downloaded
+2024-02-29 10:01:42 - INFO - 82/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131204.doc already downloaded
+2024-02-29 10:01:42 - INFO - 83/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131205.doc already downloaded
+2024-02-29 10:01:42 - INFO - 84/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131206.doc already downloaded
+2024-02-29 10:01:42 - INFO - 85/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131207.doc already downloaded
+2024-02-29 10:01:42 - INFO - 86/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131208.doc already downloaded
+2024-02-29 10:01:42 - INFO - 87/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131210.doc already downloaded
+2024-02-29 10:01:42 - INFO - 88/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131211.doc already downloaded
+2024-02-29 10:01:42 - INFO - 89/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131212.doc already downloaded
+2024-02-29 10:01:42 - INFO - 90/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131220.doc already downloaded
+2024-02-29 10:01:42 - INFO - 91/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131221.doc already downloaded
+2024-02-29 10:01:42 - INFO - 92/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131222.doc already downloaded
+2024-02-29 10:01:42 - INFO - 93/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131223.doc already downloaded
+2024-02-29 10:01:42 - INFO - 94/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131229.doc already downloaded
+2024-02-29 10:01:42 - INFO - 95/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131230.doc already downloaded
+2024-02-29 10:01:42 - INFO - 96/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131233.doc already downloaded
+2024-02-29 10:01:42 - INFO - 97/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131234.doc already downloaded
+2024-02-29 10:01:42 - INFO - 98/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131235.doc already downloaded
+2024-02-29 10:01:42 - INFO - 99/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131236.doc already downloaded
+2024-02-29 10:01:42 - INFO - *** ROUND 6 ***
+2024-02-29 10:01:42 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentCommitteeSession?$format=json&$skiptoken=132754L ***
+2024-02-29 10:01:43 - INFO - *** 100 documents to download ***
+2024-02-29 10:01:43 - INFO - 0/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131237.doc already downloaded
+2024-02-29 10:01:43 - INFO - 1/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131238.doc already downloaded
+2024-02-29 10:01:43 - INFO - 2/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131239.doc already downloaded
+2024-02-29 10:01:43 - INFO - 3/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131240.doc already downloaded
+2024-02-29 10:01:43 - INFO - 4/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131241.doc already downloaded
+2024-02-29 10:01:43 - INFO - 5/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131242.doc already downloaded
+2024-02-29 10:01:43 - INFO - 6/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131243.doc already downloaded
+2024-02-29 10:01:43 - INFO - 7/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131244.doc already downloaded
+2024-02-29 10:01:43 - INFO - 8/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131248.doc already downloaded
+2024-02-29 10:01:43 - INFO - 9/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131253.doc already downloaded
+2024-02-29 10:01:43 - INFO - 10/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131254.doc already downloaded
+2024-02-29 10:01:43 - INFO - 11/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131255.doc already downloaded
+2024-02-29 10:01:43 - INFO - 12/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131256.doc already downloaded
+2024-02-29 10:01:43 - INFO - 13/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131257.doc already downloaded
+2024-02-29 10:01:43 - INFO - 14/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131258.doc already downloaded
+2024-02-29 10:01:43 - INFO - 15/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131259.doc already downloaded
+2024-02-29 10:01:43 - INFO - 16/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131260.doc already downloaded
+2024-02-29 10:01:43 - INFO - 17/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131261.doc already downloaded
+2024-02-29 10:01:43 - INFO - 18/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131262.doc already downloaded
+2024-02-29 10:01:43 - INFO - 19/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131263.doc already downloaded
+2024-02-29 10:01:43 - INFO - 20/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131264.doc already downloaded
+2024-02-29 10:01:43 - INFO - 21/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131281.doc already downloaded
+2024-02-29 10:01:43 - INFO - 22/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131283.doc already downloaded
+2024-02-29 10:01:43 - INFO - 23/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131286.doc already downloaded
+2024-02-29 10:01:43 - INFO - 24/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131287.doc already downloaded
+2024-02-29 10:01:43 - INFO - 25/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131288.doc already downloaded
+2024-02-29 10:01:43 - INFO - 26/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131289.doc already downloaded
+2024-02-29 10:01:43 - INFO - 27/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131291.doc already downloaded
+2024-02-29 10:01:43 - INFO - 28/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131292.doc already downloaded
+2024-02-29 10:01:43 - INFO - 29/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131293.doc already downloaded
+2024-02-29 10:01:43 - INFO - 30/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131294.doc already downloaded
+2024-02-29 10:01:43 - INFO - 31/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131295.doc already downloaded
+2024-02-29 10:01:43 - INFO - 32/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131296.doc already downloaded
+2024-02-29 10:01:43 - INFO - 33/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131297.doc already downloaded
+2024-02-29 10:01:43 - INFO - 34/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131298.doc already downloaded
+2024-02-29 10:01:43 - INFO - 35/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131303.doc already downloaded
+2024-02-29 10:01:43 - INFO - 36/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131305.doc already downloaded
+2024-02-29 10:01:43 - INFO - 37/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131314.doc already downloaded
+2024-02-29 10:01:43 - INFO - 38/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131315.doc already downloaded
+2024-02-29 10:01:43 - INFO - 39/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131316.doc already downloaded
+2024-02-29 10:01:43 - INFO - 40/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131317.doc already downloaded
+2024-02-29 10:01:43 - INFO - 41/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131318.doc already downloaded
+2024-02-29 10:01:43 - INFO - 42/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131319.doc already downloaded
+2024-02-29 10:01:43 - INFO - 43/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131320.doc already downloaded
+2024-02-29 10:01:43 - INFO - 44/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131321.doc already downloaded
+2024-02-29 10:01:43 - INFO - 45/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131322.doc already downloaded
+2024-02-29 10:01:43 - INFO - 46/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131323.doc already downloaded
+2024-02-29 10:01:43 - INFO - 47/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131324.doc already downloaded
+2024-02-29 10:01:43 - INFO - 48/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131325.doc already downloaded
+2024-02-29 10:01:43 - INFO - 49/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131326.doc already downloaded
+2024-02-29 10:01:43 - INFO - 50/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131327.doc already downloaded
+2024-02-29 10:01:43 - INFO - 51/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131328.doc already downloaded
+2024-02-29 10:01:43 - INFO - 52/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131329.doc already downloaded
+2024-02-29 10:01:43 - INFO - 53/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131330.doc already downloaded
+2024-02-29 10:01:43 - INFO - 54/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131336.doc already downloaded
+2024-02-29 10:01:43 - INFO - 55/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131337.doc already downloaded
+2024-02-29 10:01:43 - INFO - 56/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131342.doc already downloaded
+2024-02-29 10:01:43 - INFO - 57/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131343.doc already downloaded
+2024-02-29 10:01:43 - INFO - 58/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131347.doc already downloaded
+2024-02-29 10:01:43 - INFO - 59/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131348.doc already downloaded
+2024-02-29 10:01:43 - INFO - 60/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131349.doc already downloaded
+2024-02-29 10:01:43 - INFO - 61/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131350.doc already downloaded
+2024-02-29 10:01:43 - INFO - 62/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131351.doc already downloaded
+2024-02-29 10:01:43 - INFO - 63/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131352.doc already downloaded
+2024-02-29 10:01:43 - INFO - 64/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131353.doc already downloaded
+2024-02-29 10:01:43 - INFO - 65/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131358.doc already downloaded
+2024-02-29 10:01:43 - INFO - 66/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131359.doc already downloaded
+2024-02-29 10:01:43 - INFO - 67/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131360.doc already downloaded
+2024-02-29 10:01:43 - INFO - 68/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131361.doc already downloaded
+2024-02-29 10:01:43 - INFO - 69/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131364.doc already downloaded
+2024-02-29 10:01:43 - INFO - 70/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131365.doc already downloaded
+2024-02-29 10:01:43 - INFO - 71/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131366.doc already downloaded
+2024-02-29 10:01:43 - INFO - 72/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131367.doc already downloaded
+2024-02-29 10:01:43 - INFO - 73/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131368.doc already downloaded
+2024-02-29 10:01:43 - INFO - 74/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131371.doc already downloaded
+2024-02-29 10:01:43 - INFO - 75/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131372.doc already downloaded
+2024-02-29 10:01:43 - INFO - 76/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131373.doc already downloaded
+2024-02-29 10:01:43 - INFO - 77/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131374.doc already downloaded
+2024-02-29 10:01:43 - INFO - 78/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131375.doc already downloaded
+2024-02-29 10:01:43 - INFO - 79/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131376.doc already downloaded
+2024-02-29 10:01:43 - INFO - 80/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131377.doc already downloaded
+2024-02-29 10:01:43 - INFO - 81/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131379.doc already downloaded
+2024-02-29 10:01:43 - INFO - 82/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131380.doc already downloaded
+2024-02-29 10:01:43 - INFO - 83/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131385.doc already downloaded
+2024-02-29 10:01:43 - INFO - 84/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131387.doc already downloaded
+2024-02-29 10:01:43 - INFO - 85/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131389.doc already downloaded
+2024-02-29 10:01:43 - INFO - 86/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131390.doc already downloaded
+2024-02-29 10:01:43 - INFO - 87/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131394.doc already downloaded
+2024-02-29 10:01:43 - INFO - 88/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131395.doc already downloaded
+2024-02-29 10:01:43 - INFO - 89/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131396.doc already downloaded
+2024-02-29 10:01:43 - INFO - 90/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131397.doc already downloaded
+2024-02-29 10:01:43 - INFO - 91/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131398.doc already downloaded
+2024-02-29 10:01:43 - INFO - 92/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131399.doc already downloaded
+2024-02-29 10:01:43 - INFO - 93/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131400.doc already downloaded
+2024-02-29 10:01:43 - INFO - 94/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131401.doc already downloaded
+2024-02-29 10:01:43 - INFO - 95/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131402.doc already downloaded
+2024-02-29 10:01:43 - INFO - 96/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131405.doc already downloaded
+2024-02-29 10:01:43 - INFO - 97/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131408.doc already downloaded
+2024-02-29 10:01:43 - INFO - 98/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131410.doc already downloaded
+2024-02-29 10:01:43 - INFO - 99/100 https://fs.knesset.gov.il//16/Committees/16_ptv_131411.doc already downloaded
+2024-02-29 10:01:43 - INFO - *** ROUND 7 ***
+2024-02-29 10:20:28 - INFO - Program start
+2024-02-29 10:20:29 - INFO - ** TOTAL 65148 documents on KNS_DocumentPlenumSession **
+2024-02-29 10:20:31 - INFO - ** TOTAL 179398 documents on KNS_DocumentCommitteeSession **
+2024-02-29 10:20:32 - INFO - ** TOTAL 93611 documents on KNS_DocumentBill **
+2024-02-29 10:20:32 - INFO - Downloading source KNS_DocumentPlenumSession
+2024-02-29 10:20:32 - INFO - *** ROUND 1 ***
+2024-02-29 10:20:32 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentPlenumSession?$format=json ***
+2024-02-29 10:20:33 - INFO - *** 100 documents to download ***
+2024-02-29 10:20:33 - WARNING - 0/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128869.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 1/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128870.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 2/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128871.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 3/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128874.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 4/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128875.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 5/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128876.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 6/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128878.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 7/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128879.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 8/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128882.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 9/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128883.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 10/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128884.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 11/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128886.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 12/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128887.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 13/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128888.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 14/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128889.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 15/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128890.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 16/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128892.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 17/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128893.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 18/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128894.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 19/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128895.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 20/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128896.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 21/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128897.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 22/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128900.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 23/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128901.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 24/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128902.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 25/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128903.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 26/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128905.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 27/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128906.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 28/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128907.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 29/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128908.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 30/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128909.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 31/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128910.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 32/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128911.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 33/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128913.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 34/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128916.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 35/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128917.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 36/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128918.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 37/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128919.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 38/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128920.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 39/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128922.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 40/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128924.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 41/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128926.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 42/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128928.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 43/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128929.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 44/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128930.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 45/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128931.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 46/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128932.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 47/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128933.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 48/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128934.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 49/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128935.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 50/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128936.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 51/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128937.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 52/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128938.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 53/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128939.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 54/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128940.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 55/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128941.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 56/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128942.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 57/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128943.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 58/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128944.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 59/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128945.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 60/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128946.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 61/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128947.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 62/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128948.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 63/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128949.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 64/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128950.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 65/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128951.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 66/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128952.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 67/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128953.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 68/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128954.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 69/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128955.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 70/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128956.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 71/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128957.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 72/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128958.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 73/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128959.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 74/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128960.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 75/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128961.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 76/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128962.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 77/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128963.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 78/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128964.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 79/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128965.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 80/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128966.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 81/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128967.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 82/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128968.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 83/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128969.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 84/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128970.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 85/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128971.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 86/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128972.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 87/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128973.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 88/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128974.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 89/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128975.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 90/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128976.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 91/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128977.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 92/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128978.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 93/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128979.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 94/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128980.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 95/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128981.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 96/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128982.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 97/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128983.DOC already downloaded
+2024-02-29 10:20:33 - WARNING - 98/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128984.doc already downloaded
+2024-02-29 10:20:33 - WARNING - 99/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128985.DOC already downloaded
+2024-02-29 10:20:33 - INFO - 0 downloaded 0 already downloaded, 0 not WORD format, 0 corrupted 
+2024-02-29 10:20:33 - INFO - *** ROUND 2 ***
+2024-02-29 10:20:33 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentPlenumSession?$format=json&$skiptoken=128985L ***
+2024-02-29 10:20:34 - INFO - *** 100 documents to download ***
+2024-02-29 10:20:34 - WARNING - 0/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128986.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 1/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128987.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 2/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128988.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 3/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128989.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 4/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128990.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 5/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128991.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 6/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128992.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 7/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128993.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 8/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128994.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 9/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128995.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 10/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128996.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 11/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128997.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 12/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128998.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 13/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128999.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 14/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129000.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 15/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129001.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 16/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129002.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 17/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129003.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 18/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129004.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 19/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129005.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 20/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129006.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 21/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129007.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 22/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129008.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 23/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129009.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 24/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129010.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 25/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129011.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 26/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129012.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 27/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129013.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 28/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129014.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 29/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129015.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 30/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129016.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 31/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129017.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 32/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129018.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 33/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129019.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 34/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129020.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 35/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129021.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 36/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129022.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 37/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129023.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 38/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129024.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 39/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129025.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 40/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129026.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 41/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129027.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 42/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129028.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 43/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129029.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 44/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129030.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 45/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129031.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 46/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129032.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 47/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129033.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 48/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129034.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 49/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129035.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 50/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129036.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 51/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129037.DOC already downloaded
+2024-02-29 10:20:34 - WARNING - 52/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129038.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 53/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129039.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 54/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129040.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 55/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129041.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 56/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129042.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 57/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129043.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 58/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129044.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 59/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129045.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 60/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129046.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 61/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129047.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 62/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129048.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 63/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129049.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 64/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129050.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 65/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129051.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 66/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129052.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 67/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129053.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 68/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129054.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 69/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129055.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 70/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129056.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 71/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129057.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 72/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129058.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 73/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129059.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 74/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129060.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 75/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129061.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 76/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129062.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 77/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129063.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 78/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129064.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 79/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129065.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 80/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129066.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 81/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129067.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 82/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129068.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 83/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129069.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 84/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129070.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 85/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129071.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 86/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129072.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 87/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129073.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 88/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129074.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 89/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129075.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 90/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129076.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 91/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129077.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 92/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129078.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 93/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129079.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 94/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129080.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 95/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129081.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 96/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129082.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 97/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129083.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 98/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129084.doc already downloaded
+2024-02-29 10:20:34 - WARNING - 99/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129085.doc already downloaded
+2024-02-29 10:20:34 - INFO - 0 downloaded 0 already downloaded, 0 not WORD format, 0 corrupted 
+2024-02-29 10:20:34 - INFO - *** ROUND 3 ***
+2024-02-29 10:20:34 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentPlenumSession?$format=json&$skiptoken=129085L ***
+2024-02-29 10:20:35 - INFO - *** 100 documents to download ***
+2024-02-29 10:20:35 - WARNING - 0/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129086.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 1/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129087.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 2/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129088.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 3/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129089.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 4/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129090.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 5/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129091.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 6/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129092.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 7/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129093.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 8/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129094.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 9/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129095.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 10/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129096.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 11/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129097.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 12/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129098.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 13/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129099.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 14/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129100.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 15/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129101.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 16/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129102.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 17/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129103.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 18/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129104.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 19/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129105.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 20/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129106.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 21/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129107.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 22/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129108.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 23/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129109.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 24/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129110.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 25/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129111.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 26/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129112.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 27/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129113.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 28/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129114.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 29/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129115.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 30/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129116.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 31/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129117.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 32/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129118.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 33/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129119.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 34/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129120.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 35/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129121.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 36/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129122.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 37/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129123.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 38/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129124.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 39/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129125.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 40/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129126.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 41/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129127.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 42/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129128.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 43/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129129.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 44/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129130.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 45/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129131.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 46/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129132.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 47/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129133.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 48/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129134.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 49/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129135.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 50/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129136.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 51/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129137.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 52/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129138.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 53/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129139.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 54/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129140.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 55/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129141.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 56/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129142.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 57/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129143.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 58/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129144.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 59/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129145.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 60/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129146.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 61/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129147.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 62/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129148.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 63/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129149.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 64/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129150.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 65/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129151.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 66/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129152.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 67/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129153.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 68/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129154.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 69/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129155.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 70/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129156.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 71/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129157.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 72/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129158.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 73/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129159.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 74/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129160.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 75/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129161.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 76/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129162.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 77/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129163.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 78/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129164.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 79/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129165.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 80/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129166.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 81/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129167.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 82/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129168.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 83/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129169.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 84/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129170.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 85/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129171.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 86/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129172.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 87/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129173.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 88/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129174.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 89/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129175.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 90/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129176.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 91/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129177.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 92/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129178.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 93/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129179.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 94/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129180.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 95/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129181.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 96/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129182.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 97/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129183.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 98/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129184.doc already downloaded
+2024-02-29 10:20:35 - WARNING - 99/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129185.doc already downloaded
+2024-02-29 10:20:35 - INFO - 0 downloaded 0 already downloaded, 0 not WORD format, 0 corrupted 
+2024-02-29 10:20:35 - INFO - *** ROUND 4 ***
+2024-02-29 10:20:35 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentPlenumSession?$format=json&$skiptoken=129185L ***
+2024-02-29 10:20:36 - INFO - *** 100 documents to download ***
+2024-02-29 10:20:36 - WARNING - 0/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129186.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 1/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129187.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 2/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129188.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 3/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129189.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 4/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129190.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 5/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129191.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 6/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129192.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 7/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129193.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 8/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129194.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 9/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129195.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 10/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129196.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 11/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129197.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 12/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129198.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 13/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129199.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 14/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129200.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 15/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129201.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 16/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129202.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 17/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129203.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 18/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129204.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 19/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129205.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 20/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129206.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 21/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129207.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 22/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129208.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 23/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129209.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 24/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129210.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 25/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129211.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 26/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129212.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 27/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129213.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 28/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129214.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 29/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129215.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 30/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129216.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 31/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129217.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 32/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129218.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 33/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129219.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 34/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129220.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 35/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129221.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 36/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129222.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 37/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129223.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 38/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129224.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 39/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129225.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 40/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129226.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 41/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129228.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 42/100 https://fs.knesset.gov.il//17/Plenum/17_toc_129229.DOC already downloaded
+2024-02-29 10:20:36 - WARNING - 43/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129230.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 44/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129232.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 45/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129233.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 46/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129236.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 47/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129238.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 48/100 https://fs.knesset.gov.il//17/Plenum/17_toc_129239.DOC already downloaded
+2024-02-29 10:20:36 - WARNING - 49/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129240.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 50/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129241.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 51/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129243.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 52/100 https://fs.knesset.gov.il//17/Plenum/17_toc_129244.DOC already downloaded
+2024-02-29 10:20:36 - WARNING - 53/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129245.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 54/100 https://fs.knesset.gov.il//17/Plenum/17_toc_129247.DOC already downloaded
+2024-02-29 10:20:36 - WARNING - 55/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129248.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 56/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129250.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 57/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129252.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 58/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129254.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 59/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129256.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 60/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129258.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 61/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129259.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 62/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129262.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 63/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129263.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 64/100 https://fs.knesset.gov.il//17/Plenum/17_toc_129265.DOC already downloaded
+2024-02-29 10:20:36 - WARNING - 65/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129266.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 66/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129267.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 67/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129270.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 68/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129271.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 69/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129274.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 70/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129276.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 71/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129277.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 72/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129279.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 73/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129282.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 74/100 https://fs.knesset.gov.il//17/Plenum/17_toc_129283.DOC already downloaded
+2024-02-29 10:20:36 - WARNING - 75/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129284.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 76/100 https://fs.knesset.gov.il//17/Plenum/17_toc_129285.DOC already downloaded
+2024-02-29 10:20:36 - WARNING - 77/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129286.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 78/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129287.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 79/100 https://fs.knesset.gov.il//17/Plenum/17_toc_129288.DOC already downloaded
+2024-02-29 10:20:36 - WARNING - 80/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129290.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 81/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129291.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 82/100 https://fs.knesset.gov.il//17/Plenum/17_toc_129292.DOC already downloaded
+2024-02-29 10:20:36 - WARNING - 83/100 https://fs.knesset.gov.il//17/Plenum/17_toc_129293.DOC already downloaded
+2024-02-29 10:20:36 - WARNING - 84/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129294.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 85/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129295.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 86/100 https://fs.knesset.gov.il//17/Plenum/17_toc_129296.DOC already downloaded
+2024-02-29 10:20:36 - WARNING - 87/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129297.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 88/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129300.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 89/100 https://fs.knesset.gov.il//17/Plenum/17_toc_129301.DOC already downloaded
+2024-02-29 10:20:36 - WARNING - 90/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129302.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 91/100 https://fs.knesset.gov.il//17/Plenum/17_toc_129303.DOC already downloaded
+2024-02-29 10:20:36 - WARNING - 92/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129304.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 93/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129305.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 94/100 https://fs.knesset.gov.il//17/Plenum/17_toc_129306.DOC already downloaded
+2024-02-29 10:20:36 - WARNING - 95/100 https://fs.knesset.gov.il//17/Plenum/17_toc_129307.DOC already downloaded
+2024-02-29 10:20:36 - WARNING - 96/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129308.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 97/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129309.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 98/100 https://fs.knesset.gov.il//17/Plenum/17_ptm_129312.doc already downloaded
+2024-02-29 10:20:36 - WARNING - 99/100 https://fs.knesset.gov.il//17/Plenum/17_toc_129313.DOC already downloaded
+2024-02-29 10:20:36 - INFO - 0 downloaded 0 already downloaded, 0 not WORD format, 0 corrupted 
+2024-02-29 10:20:36 - INFO - *** ROUND 5 ***
+2024-02-29 10:20:36 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentPlenumSession?$format=json&$skiptoken=129313L ***
+2024-02-29 10:22:53 - INFO - Program start
+2024-02-29 10:22:54 - INFO - ** TOTAL 65148 documents on KNS_DocumentPlenumSession **
+2024-02-29 10:22:55 - INFO - ** TOTAL 179398 documents on KNS_DocumentCommitteeSession **
+2024-02-29 10:22:57 - INFO - ** TOTAL 93612 documents on KNS_DocumentBill **
+2024-02-29 10:22:57 - INFO - Downloading source KNS_DocumentPlenumSession
+2024-02-29 10:22:57 - INFO - *** ROUND 1 ***
+2024-02-29 10:23:00 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentPlenumSession?$format=json ***
+2024-02-29 10:23:00 - INFO - *** 100 documents to download ***
+2024-02-29 10:23:01 - DEBUG - 0/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128869.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 1/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128870.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 2/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128871.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 3/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128874.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 4/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128875.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 5/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128876.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 6/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128878.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 7/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128879.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 8/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128882.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 9/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128883.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 10/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128884.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 11/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128886.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 12/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128887.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 13/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128888.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 14/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128889.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 15/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128890.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 16/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128892.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 17/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128893.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 18/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128894.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 19/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128895.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 20/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128896.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 21/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128897.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 22/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128900.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 23/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128901.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 24/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128902.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 25/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128903.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 26/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128905.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 27/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128906.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 28/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128907.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 29/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128908.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 30/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128909.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 31/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128910.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 32/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128911.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 33/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128913.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 34/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128916.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 35/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128917.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 36/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128918.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 37/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128919.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 38/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128920.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 39/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128922.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 40/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128924.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 41/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128926.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 42/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128928.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 43/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128929.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 44/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128930.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 45/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128931.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 46/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128932.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 47/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128933.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 48/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128934.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 49/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128935.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 50/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128936.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 51/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128937.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 52/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128938.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 53/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128939.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 54/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128940.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 55/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128941.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 56/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128942.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 57/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128943.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 58/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128944.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 59/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128945.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 60/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128946.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 61/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128947.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 62/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128948.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 63/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128949.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 64/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128950.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 65/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128951.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 66/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128952.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 67/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128953.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 68/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128954.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 69/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128955.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 70/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128956.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 71/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128957.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 72/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128958.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 73/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128959.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 74/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128960.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 75/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128961.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 76/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128962.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 77/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128963.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 78/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128964.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 79/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128965.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 80/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128966.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 81/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128967.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 82/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128968.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 83/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128969.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 84/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128970.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 85/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128971.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 86/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128972.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 87/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128973.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 88/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128974.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 89/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128975.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 90/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128976.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 91/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128977.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 92/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128978.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 93/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128979.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 94/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128980.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 95/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128981.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 96/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128982.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 97/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128983.DOC already downloaded
+2024-02-29 10:23:01 - DEBUG - 98/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128984.doc already downloaded
+2024-02-29 10:23:01 - DEBUG - 99/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128985.DOC already downloaded
+2024-02-29 10:23:01 - INFO - 0 downloaded 0 already downloaded, 0 not WORD format, 0 corrupted 
+2024-02-29 10:31:53 - INFO - Program start
+2024-02-29 10:31:54 - INFO - ** TOTAL 65148 documents on KNS_DocumentPlenumSession **
+2024-02-29 10:31:55 - INFO - ** TOTAL 179398 documents on KNS_DocumentCommitteeSession **
+2024-02-29 10:31:57 - INFO - ** TOTAL 93612 documents on KNS_DocumentBill **
+2024-02-29 10:31:57 - INFO - Downloading source KNS_DocumentPlenumSession
+2024-02-29 10:31:57 - INFO - *** ROUND 1 ***
+2024-02-29 10:32:02 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentPlenumSession?$format=json ***
+2024-02-29 10:32:02 - INFO - *** 100 documents to download ***
+2024-02-29 10:32:19 - DEBUG - 0/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128869.DOC already downloaded
+2024-02-29 10:33:17 - INFO - Program start
+2024-02-29 10:33:19 - INFO - ** TOTAL 65148 documents on KNS_DocumentPlenumSession **
+2024-02-29 10:33:21 - INFO - ** TOTAL 179398 documents on KNS_DocumentCommitteeSession **
+2024-02-29 10:33:22 - INFO - ** TOTAL 93612 documents on KNS_DocumentBill **
+2024-02-29 10:33:22 - INFO - Downloading source KNS_DocumentPlenumSession
+2024-02-29 10:33:22 - INFO - *** ROUND 1 ***
+2024-02-29 10:33:25 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentPlenumSession?$format=json ***
+2024-02-29 10:33:25 - INFO - *** 100 documents to download ***
+2024-02-29 10:33:25 - DEBUG - 0/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128869.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 1/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128870.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 2/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128871.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 3/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128874.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 4/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128875.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 5/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128876.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 6/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128878.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 7/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128879.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 8/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128882.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 9/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128883.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 10/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128884.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 11/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128886.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 12/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128887.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 13/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128888.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 14/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128889.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 15/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128890.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 16/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128892.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 17/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128893.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 18/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128894.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 19/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128895.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 20/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128896.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 21/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128897.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 22/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128900.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 23/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128901.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 24/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128902.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 25/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128903.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 26/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128905.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 27/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128906.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 28/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128907.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 29/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128908.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 30/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128909.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 31/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128910.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 32/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128911.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 33/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128913.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 34/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128916.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 35/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128917.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 36/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128918.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 37/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128919.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 38/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128920.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 39/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128922.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 40/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128924.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 41/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128926.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 42/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128928.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 43/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128929.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 44/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128930.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 45/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128931.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 46/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128932.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 47/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128933.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 48/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128934.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 49/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128935.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 50/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128936.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 51/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128937.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 52/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128938.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 53/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128939.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 54/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128940.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 55/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128941.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 56/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128942.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 57/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128943.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 58/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128944.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 59/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128945.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 60/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128946.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 61/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128947.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 62/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128948.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 63/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128949.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 64/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128950.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 65/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128951.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 66/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128952.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 67/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128953.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 68/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128954.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 69/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128955.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 70/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128956.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 71/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128957.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 72/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128958.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 73/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128959.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 74/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128960.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 75/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128961.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 76/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128962.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 77/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128963.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 78/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128964.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 79/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128965.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 80/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128966.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 81/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128967.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 82/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128968.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 83/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128969.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 84/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128970.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 85/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128971.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 86/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128972.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 87/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128973.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 88/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128974.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 89/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128975.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 90/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128976.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 91/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128977.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 92/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128978.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 93/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128979.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 94/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128980.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 95/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128981.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 96/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128982.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 97/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128983.DOC already downloaded
+2024-02-29 10:33:25 - DEBUG - 98/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128984.doc already downloaded
+2024-02-29 10:33:25 - DEBUG - 99/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128985.DOC already downloaded
+2024-02-29 10:33:28 - INFO - 0 downloaded 100 already downloaded, 0 not WORD format, 0 corrupted 
+2024-02-29 10:33:33 - INFO - *** ROUND 2 ***
+2024-02-29 10:33:33 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentPlenumSession?$format=json&$skiptoken=128985L ***
+2024-02-29 10:33:34 - INFO - *** 100 documents to download ***
+2024-02-29 10:33:34 - DEBUG - 0/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128986.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 1/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128987.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 2/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128988.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 3/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128989.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 4/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128990.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 5/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128991.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 6/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128992.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 7/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128993.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 8/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128994.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 9/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128995.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 10/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128996.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 11/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128997.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 12/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_128998.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 13/100 https://fs.knesset.gov.il//16/Plenum/16_toc_128999.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 14/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129000.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 15/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129001.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 16/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129002.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 17/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129003.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 18/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129004.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 19/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129005.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 20/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129006.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 21/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129007.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 22/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129008.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 23/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129009.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 24/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129010.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 25/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129011.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 26/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129012.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 27/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129013.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 28/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129014.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 29/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129015.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 30/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129016.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 31/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129017.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 32/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129018.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 33/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129019.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 34/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129020.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 35/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129021.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 36/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129022.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 37/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129023.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 38/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129024.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 39/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129025.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 40/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129026.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 41/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129027.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 42/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129028.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 43/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129029.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 44/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129030.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 45/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129031.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 46/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129032.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 47/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129033.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 48/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129034.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 49/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129035.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 50/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129036.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 51/100 https://fs.knesset.gov.il//16/Plenum/16_toc_129037.DOC already downloaded
+2024-02-29 10:33:34 - DEBUG - 52/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129038.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 53/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129039.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 54/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129040.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 55/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129041.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 56/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129042.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 57/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129043.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 58/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129044.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 59/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129045.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 60/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129046.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 61/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129047.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 62/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129048.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 63/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129049.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 64/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129050.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 65/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129051.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 66/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129052.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 67/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129053.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 68/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129054.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 69/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129055.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 70/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129056.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 71/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129057.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 72/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129058.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 73/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129059.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 74/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129060.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 75/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129061.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 76/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129062.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 77/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129063.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 78/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129064.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 79/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129065.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 80/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129066.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 81/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129067.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 82/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129068.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 83/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129069.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 84/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129070.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 85/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129071.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 86/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129072.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 87/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129073.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 88/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129074.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 89/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129075.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 90/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129076.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 91/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129077.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 92/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129078.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 93/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129079.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 94/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129080.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 95/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129081.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 96/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129082.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 97/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129083.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 98/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129084.doc already downloaded
+2024-02-29 10:33:34 - DEBUG - 99/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129085.doc already downloaded
+2024-02-29 10:33:35 - INFO - 0 downloaded 100 already downloaded, 0 not WORD format, 0 corrupted 
+2024-02-29 10:33:37 - INFO - *** ROUND 3 ***
+2024-02-29 10:33:38 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_DocumentPlenumSession?$format=json&$skiptoken=129085L ***
+2024-02-29 10:33:38 - INFO - *** 100 documents to download ***
+2024-02-29 10:33:38 - DEBUG - 0/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129086.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 1/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129087.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 2/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129088.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 3/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129089.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 4/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129090.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 5/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129091.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 6/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129092.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 7/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129093.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 8/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129094.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 9/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129095.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 10/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129096.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 11/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129097.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 12/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129098.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 13/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129099.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 14/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129100.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 15/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129101.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 16/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129102.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 17/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129103.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 18/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129104.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 19/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129105.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 20/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129106.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 21/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129107.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 22/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129108.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 23/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129109.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 24/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129110.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 25/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129111.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 26/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129112.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 27/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129113.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 28/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129114.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 29/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129115.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 30/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129116.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 31/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129117.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 32/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129118.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 33/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129119.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 34/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129120.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 35/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129121.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 36/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129122.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 37/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129123.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 38/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129124.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 39/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129125.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 40/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129126.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 41/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129127.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 42/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129128.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 43/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129129.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 44/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129130.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 45/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129131.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 46/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129132.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 47/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129133.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 48/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129134.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 49/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129135.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 50/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129136.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 51/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129137.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 52/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129138.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 53/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129139.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 54/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129140.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 55/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129141.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 56/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129142.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 57/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129143.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 58/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129144.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 59/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129145.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 60/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129146.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 61/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129147.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 62/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129148.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 63/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129149.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 64/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129150.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 65/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129151.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 66/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129152.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 67/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129153.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 68/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129154.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 69/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129155.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 70/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129156.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 71/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129157.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 72/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129158.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 73/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129159.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 74/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129160.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 75/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129161.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 76/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129162.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 77/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129163.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 78/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129164.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 79/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129165.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 80/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129166.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 81/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129167.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 82/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129168.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 83/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129169.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 84/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129170.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 85/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129171.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 86/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129172.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 87/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129173.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 88/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129174.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 89/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129175.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 90/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129176.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 91/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129177.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 92/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129178.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 93/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129179.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 94/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129180.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 95/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129181.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 96/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129182.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 97/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129183.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 98/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129184.doc already downloaded
+2024-02-29 10:33:38 - DEBUG - 99/100 https://fs.knesset.gov.il//16/Plenum/16_ptm_129185.doc already downloaded
+2024-02-29 10:33:39 - INFO - 0 downloaded 100 already downloaded, 0 not WORD format, 0 corrupted 
+2024-02-29 10:34:07 - INFO - Program start
+2024-02-29 10:34:12 - INFO - Number of files in API JSONS 10
+2024-02-29 10:34:59 - INFO - Program start
+2024-02-29 10:35:06 - INFO - Number of files in API JSONS 10
+2024-02-29 10:52:53 - INFO - Program start
+2024-02-29 10:52:56 - INFO - Number of files in API JSONS 10
+2024-02-29 10:53:35 - INFO - Program start
+2024-02-29 10:53:35 - INFO - Number of files in API JSONS 10
+2024-02-29 11:10:29 - INFO - Program start
+2024-02-29 11:10:29 - INFO - Number of files in API JSONS 10
+2024-02-29 11:11:09 - INFO - Program start
+2024-02-29 11:11:12 - INFO - Number of files in API JSONS 10
+2024-02-29 11:14:06 - INFO - Program start
+2024-02-29 11:14:08 - INFO - Number of files in API JSONS 10
+2024-02-29 11:16:08 - INFO - 1000 records on all sources
+2024-02-29 11:16:58 - INFO - 400 records on KNS_DocumentPlenumSession
+2024-02-29 11:20:06 - INFO - Program start
+2024-02-29 11:20:08 - INFO - Number of files in API JSONS 10
+2024-02-29 11:20:12 - INFO - 1000 records on all sources
+2024-02-29 11:20:15 - INFO - 400 records on KNS_DocumentPlenumSession
+2024-02-29 11:20:17 - INFO - 600 records on KNS_DocumentCommitteeSession
+2024-02-29 11:20:18 - INFO - 0 records on KNS_DocumentBill
+2024-02-29 11:20:49 - INFO - Program start
+2024-02-29 11:20:49 - INFO - Number of files in API JSONS 10
+2024-02-29 11:20:51 - INFO - 1000 records on all sources
+2024-02-29 11:20:51 - INFO - 400 records on KNS_DocumentPlenumSession
+2024-02-29 11:20:51 - INFO - 600 records on KNS_DocumentCommitteeSession
+2024-02-29 11:20:51 - INFO - 0 records on KNS_DocumentBill
+2024-02-29 11:20:52 - INFO - |    |   knesset_num | file_format   |   Counts | source                    |
+|---:|--------------:|:--------------|---------:|:--------------------------|
+|  0 |            16 | doc           |      341 | KNS_DocumentPlenumSession |
+|  1 |            17 | doc           |       59 | KNS_DocumentPlenumSession |
+2024-02-29 11:20:54 - INFO - |    |   knesset_num | file_format   |   Counts | source                       |
+|---:|--------------:|:--------------|---------:|:-----------------------------|
+|  0 |            16 | doc           |      600 | KNS_DocumentCommitteeSession |
+2024-02-29 11:20:54 - INFO - | knesset_num   | file_format   | Counts   | source   |
+|---------------|---------------|----------|----------|
+2024-02-29 11:21:58 - INFO - Program start
+2024-02-29 11:21:59 - INFO - Number of files in API JSONS 10
+2024-02-29 11:22:00 - INFO - 1000 records on all sources
+2024-02-29 11:22:00 - INFO - 400 records on KNS_DocumentPlenumSession
+2024-02-29 11:22:00 - INFO - 600 records on KNS_DocumentCommitteeSession
+2024-02-29 11:22:00 - INFO - 0 records on KNS_DocumentBill
+2024-02-29 11:22:00 - INFO - 
+|    |   knesset_num | file_format   |   Counts | source                    |
+|---:|--------------:|:--------------|---------:|:--------------------------|
+|  0 |            16 | doc           |      341 | KNS_DocumentPlenumSession |
+|  1 |            17 | doc           |       59 | KNS_DocumentPlenumSession |
+2024-02-29 11:22:01 - INFO - 
+|    |   knesset_num | file_format   |   Counts | source                       |
+|---:|--------------:|:--------------|---------:|:-----------------------------|
+|  0 |            16 | doc           |      600 | KNS_DocumentCommitteeSession |
+2024-02-29 11:22:01 - INFO - 
+| knesset_num   | file_format   | Counts   | source   |
+|---------------|---------------|----------|----------|
+2024-02-29 11:22:26 - INFO - Program start
+2024-02-29 11:22:26 - INFO - Number of files in API JSONS 10
+2024-02-29 11:22:28 - INFO - 1000 records on all sources
+2024-02-29 11:22:28 - INFO - 400 records on KNS_DocumentPlenumSession
+2024-02-29 11:22:28 - INFO - 600 records on KNS_DocumentCommitteeSession
+2024-02-29 11:22:28 - INFO - 0 records on KNS_DocumentBill
+2024-02-29 11:22:28 - INFO - 
+|    |   knesset_num | file_format   |   Counts | source                    |
+|---:|--------------:|:--------------|---------:|:--------------------------|
+|  0 |            16 | doc           |      341 | KNS_DocumentPlenumSession |
+|  1 |            17 | doc           |       59 | KNS_DocumentPlenumSession |
+2024-02-29 11:22:29 - INFO - 
+|    |   knesset_num | file_format   |   Counts | source                       |
+|---:|--------------:|:--------------|---------:|:-----------------------------|
+|  0 |            16 | doc           |      600 | KNS_DocumentCommitteeSession |
+2024-02-29 11:22:29 - INFO - 
+| knesset_num   | file_format   | Counts   | source   |
+|---------------|---------------|----------|----------|
+2024-02-29 11:23:14 - INFO - Program start
+2024-02-29 11:23:14 - INFO - Number of files in API JSONS 10
+2024-02-29 11:23:17 - INFO - 1000 records on all sources
+2024-02-29 11:23:17 - INFO - 400 records on KNS_DocumentPlenumSession
+2024-02-29 11:23:17 - INFO - 600 records on KNS_DocumentCommitteeSession
+2024-02-29 11:23:17 - INFO - 0 records on KNS_DocumentBill
+2024-02-29 11:23:19 - INFO - 
+|    |   knesset_num | file_format   |   Counts | source                    |
+|---:|--------------:|:--------------|---------:|:--------------------------|
+|  0 |            16 | doc           |      341 | KNS_DocumentPlenumSession |
+|  1 |            17 | doc           |       59 | KNS_DocumentPlenumSession |
+2024-02-29 11:23:19 - INFO - 
+|    |   knesset_num | file_format   |   Counts | source                       |
+|---:|--------------:|:--------------|---------:|:-----------------------------|
+|  0 |            16 | doc           |      600 | KNS_DocumentCommitteeSession |
+2024-02-29 11:23:19 - INFO - 
+| knesset_num   | file_format   | Counts   | source   |
+|---------------|---------------|----------|----------|
+2024-02-29 11:23:20 - INFO - Number of files in KNS_DocumentPlenumSession: 45024
+2024-02-29 11:23:20 - INFO - End counting 0 fles, 0.0 MB, 24071 words

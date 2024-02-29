@@ -13,7 +13,7 @@ def configure_logger(name):
         },
         'handlers': {
             'console': {
-                'level': 'DEBUG',
+                'level': config.log_level,
                 'class': 'logging.StreamHandler',
                 'formatter': 'default',
                 'stream': 'ext://sys.stdout'
