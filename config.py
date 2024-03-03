@@ -28,13 +28,17 @@ NOTSET 	0
 log_level='INFO'
 default='default'
 
-# Datasources on Knesset ODATA to be scraped.
+# Documents datasources on Knesset ODATA to be scraped.
 plenum_session_ref="KNS_DocumentPlenumSession"
 committees_sessions="KNS_DocumentCommitteeSession"
 bills="KNS_DocumentBill"
 
 # Datasource to download from    
 datasets_sources=[bills, plenum_session_ref, committees_sessions]
+
+plenum_session="KNS_PlenumSession"
+knesset_committies="KNS_Committee"
+meta_data_tables=[plenum_session, knesset_committies ]
 
 # Knesset ODATA site
 main_hypelink="http://knesset.gov.il/Odata/ParliamentInfo.svc/"

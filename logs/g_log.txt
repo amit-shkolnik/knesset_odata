@@ -12505,3 +12505,80 @@ PermissionError: [Errno 13] Permission denied: 'KNS_DocumentBill_docs\\16_lst_58
 | 150 |            24 | xlsx          |       14 | KNS_DocumentCommitteeSession |
 2024-02-29 19:45:42 - INFO - Number of files in KNS_DocumentBill: 60740
 2024-02-29 19:45:42 - INFO - End counting 0 fles, 0.0 MB, 128 words
+2024-02-29 19:46:12 - INFO - End counting 5000 fles, 32.0 MB, 3388760 words
+2024-02-29 19:46:41 - INFO - End counting 10000 fles, 51.0 MB, 5407830 words
+2024-02-29 19:47:32 - INFO - End counting 15000 fles, 76.0 MB, 8001548 words
+2024-02-29 19:48:34 - INFO - End counting 20000 fles, 102.0 MB, 10952379 words
+2024-02-29 19:49:39 - INFO - End counting 25000 fles, 168.0 MB, 18043859 words
+2024-02-29 19:50:39 - INFO - End counting 30000 fles, 240.0 MB, 25639081 words
+2024-02-29 19:52:03 - INFO - End counting 35000 fles, 271.0 MB, 29137517 words
+2024-02-29 19:53:45 - INFO - End counting 40000 fles, 311.0 MB, 33668090 words
+2024-02-29 19:56:05 - INFO - End counting 45000 fles, 341.0 MB, 36908004 words
+2024-02-29 19:58:17 - INFO - End counting 50000 fles, 376.0 MB, 40690245 words
+2024-02-29 20:00:36 - INFO - End counting 55000 fles, 410.0 MB, 44482630 words
+2024-02-29 20:01:34 - INFO - End counting 60000 fles, 456.0 MB, 49522794 words
+2024-02-29 20:01:41 - INFO - Number of files in KNS_DocumentPlenumSession: 45816
+2024-02-29 20:01:41 - INFO - End counting 0 fles, 0.0 MB, 24071 words
+2024-02-29 20:03:03 - INFO - End counting 5000 fles, 1105.0 MB, 116121800 words
+2024-02-29 20:04:03 - INFO - End counting 10000 fles, 1550.0 MB, 163959515 words
+2024-02-29 20:04:43 - INFO - End counting 15000 fles, 1604.0 MB, 169709979 words
+2024-02-29 20:05:23 - INFO - End counting 20000 fles, 1656.0 MB, 175403881 words
+2024-02-29 20:06:04 - INFO - End counting 25000 fles, 1786.0 MB, 189312770 words
+2024-02-29 20:06:44 - INFO - End counting 30000 fles, 1952.0 MB, 207232490 words
+2024-02-29 20:07:22 - INFO - End counting 35000 fles, 2000.0 MB, 212394819 words
+2024-02-29 20:08:02 - INFO - End counting 40000 fles, 2143.0 MB, 227815022 words
+2024-02-29 20:09:16 - INFO - End counting 45000 fles, 2653.0 MB, 281356459 words
+2024-02-29 20:09:29 - INFO - Number of files in KNS_DocumentCommitteeSession: 71294
+2024-02-29 20:09:29 - INFO - End counting 0 fles, 0.0 MB, 174 words
+2024-02-29 20:10:16 - INFO - End counting 5000 fles, 343.0 MB, 37063237 words
+2024-02-29 20:11:05 - INFO - End counting 10000 fles, 714.0 MB, 77618506 words
+2024-02-29 20:12:07 - INFO - End counting 15000 fles, 1040.0 MB, 112736110 words
+2024-02-29 20:13:13 - INFO - End counting 20000 fles, 1384.0 MB, 149605236 words
+2024-02-29 20:14:21 - INFO - End counting 25000 fles, 1610.0 MB, 173997984 words
+2024-02-29 20:15:42 - INFO - End counting 30000 fles, 1906.0 MB, 205663135 words
+2024-02-29 20:16:50 - INFO - End counting 35000 fles, 2085.0 MB, 225113318 words
+2024-02-29 20:18:14 - INFO - End counting 40000 fles, 2444.0 MB, 263949519 words
+2024-02-29 20:19:53 - INFO - End counting 45000 fles, 2789.0 MB, 301653918 words
+2024-02-29 20:21:06 - INFO - End counting 50000 fles, 2944.0 MB, 318546482 words
+2024-02-29 20:22:40 - INFO - End counting 55000 fles, 3286.0 MB, 355967578 words
+2024-02-29 20:24:40 - INFO - End counting 60000 fles, 3727.0 MB, 404307630 words
+2024-02-29 20:26:07 - INFO - End counting 65000 fles, 3980.0 MB, 431549499 words
+2024-02-29 20:27:38 - INFO - End counting 70000 fles, 4392.0 MB, 476052373 words
+2024-02-29 20:28:07 - INFO - 
+|    | source                       |   number of files |   volume (MB) |   number of words |
+|---:|:-----------------------------|------------------:|--------------:|------------------:|
+|  0 | KNS_DocumentBill             |             60740 |           462 |          50207909 |
+|  1 | KNS_DocumentPlenumSession    |             45816 |          2845 |         301390244 |
+|  2 | KNS_DocumentCommitteeSession |             71294 |          4528 |         490733531 |
+2024-02-29 20:28:07 - INFO - Program ends
+2024-03-03 13:29:18 - INFO - Program start
+2024-03-03 13:30:00 - INFO - ** TOTAL 8531 documents on KNS_PlenumSession **
+2024-03-03 13:30:07 - INFO - ** TOTAL 2887 documents on KNS_Committee **
+2024-03-03 13:30:16 - INFO - Downloading source KNS_PlenumSession
+2024-03-03 13:30:16 - INFO - *** ROUND 1 ***
+2024-03-03 13:30:16 - ERROR - 'DownloadMetadataTables' object has no attribute 'get_already_downloaded'
+Traceback (most recent call last):
+  File "C:\repos\knesset_odata\download_knesset_odata_tales.py", line 77, in download_dataset
+    skip_token, errors_list=self.download_one_page_docs(
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\repos\knesset_odata\download_knesset_odata_tales.py", line 92, in download_one_page_docs
+    already_downloaded=self.get_already_downloaded(source_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DownloadMetadataTables' object has no attribute 'get_already_downloaded'
+2024-03-03 13:31:52 - INFO - Program start
+2024-03-03 13:32:01 - INFO - ** TOTAL 8531 documents on KNS_PlenumSession **
+2024-03-03 13:32:03 - INFO - ** TOTAL 2887 documents on KNS_Committee **
+2024-03-03 13:32:22 - INFO - Downloading source KNS_PlenumSession
+2024-03-03 13:32:50 - INFO - Program start
+2024-03-03 13:32:59 - INFO - ** TOTAL 8531 documents on KNS_PlenumSession **
+2024-03-03 13:33:00 - INFO - ** TOTAL 2887 documents on KNS_Committee **
+2024-03-03 13:33:05 - INFO - Downloading source KNS_PlenumSession
+2024-03-03 13:33:07 - INFO - *** ROUND 1 ***
+2024-03-03 13:33:18 - INFO - *** Download main ODATA http://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_PlenumSession?$format=json ***
+2024-03-03 13:33:35 - INFO - *** 100 documents to download ***
+2024-03-03 13:34:56 - ERROR - too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "C:\repos\knesset_odata\download_knesset_odata_tales.py", line 76, in download_dataset
+    skip_token, errors_list=self.download_one_json(
+    ^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)

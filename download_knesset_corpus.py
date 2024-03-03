@@ -20,7 +20,11 @@ if os.name !='nt':
 import win32com.client
 word_application=None 
 
-class DownloadKnesetCorpus():
+class DownloadKnessetCorpus():
+    """
+    Downloading documents of Knesset corpus:
+    Plenum's sessions, committees sessions and legislations documents.
+    """
 
     def __init__(self) -> None:
         self.log=logging.getLogger('default')
@@ -340,7 +344,7 @@ if __name__=='__main__':
     log=configure_logger('default')
     log.info("Program start")
 
-    dkc=DownloadKnesetCorpus()
+    dkc=DownloadKnessetCorpus()
     dkc.run()
 
     log.info("Program ends")
