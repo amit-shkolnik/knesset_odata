@@ -28,6 +28,13 @@ NOTSET 	0
 log_level='INFO'
 default='default'
 
+
+# Knesset ODATA site
+main_hypelink=         "http://knesset.gov.il/Odata/ParliamentInfo.svc/"
+main_hyperlink_odatav4="https://knesset.gov.il/ODATAV4/ParliamentInfo/$metadata#KNS_Bill"
+
+active_main_hyperling=main_hypelink
+
 # Documents datasources on Knesset ODATA to be scraped.
 plenum_session_ref="KNS_DocumentPlenumSession"
 committees_sessions="KNS_DocumentCommitteeSession"
@@ -40,8 +47,6 @@ plenum_session="KNS_PlenumSession"
 knesset_committies="KNS_Committee"
 meta_data_tables=[plenum_session, knesset_committies ]
 
-# Knesset ODATA site
-main_hypelink="http://knesset.gov.il/Odata/ParliamentInfo.svc/"
 
 odata_download_format="format=json"
 ms_words_suffix=["doc", "DOC", "docx", "DOCX"] #, "rtf"]

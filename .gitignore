@@ -12,3 +12,5 @@ KNS_DocumentCommitteeSession_extracted_texts/
 knesset_dataset.zip
 odata_jsons/KNS_DocumentCommitteeSession_72825L.json
 odata_jsons/
+KNS_Committee_metadata_jsons/
+KNS_PlenumSession_metadata_jsons/

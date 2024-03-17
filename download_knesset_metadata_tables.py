@@ -51,7 +51,6 @@ class DownloadMetadataTables():
                 self.download_dataset(source, skip_token=skip_tokens[idx])
                 continue
 
-            word_application.Quit()
             return
 
         except Exception as err:
@@ -77,10 +76,9 @@ class DownloadMetadataTables():
             while True:
                 self.log.info(f"*** ROUND {rounds} ***")        
                 rounds+=1
+                
                 skip_token=self.download_one_json(
-                    source_name, skip_token)    
-                if len(errors_list)>0:
-                    self.log_erros(errors_list)            
+                    source_name, skip_token)                    
                 if not skip_token:
                     break
         except Exception as err:
@@ -93,7 +91,7 @@ class DownloadMetadataTables():
         Each API page contains -by default- 100 documents' links 
         """
         # Call ODATA API
-        response, num_of_docs, url=self.get_docs_list(source_name,skip_token)    
+        response, num_of_docs, url=self.get_metadata_json(source_name,skip_token)    
         self.save_response_json(response, source_name, url)
         # something like "KNS_DocumentPlenumSession?$skiptoken=128985L" to move
         # to next page on ODATA
@@ -102,7 +100,7 @@ class DownloadMetadataTables():
         return None
 
 
-    def get_docs_list(self, source_name:str, skip_token:str):
+    def get_metadata_json(self, source_name:str, skip_token:str):
         """
         HTTP request to get 1 page from Knesset ODATA.
         """
@@ -122,21 +120,24 @@ class DownloadMetadataTables():
                 continue
             break
 
-        num_of_docs=len(response.json()['value'])
-        self.log.info(f"*** {num_of_docs} documents to download ***")
-        return response, num_of_docs, url
+        num_of_obj=len(response.json()['value'])
+        self.log.info(f"*** {num_of_obj} documents to download ***")
+        return response, num_of_obj, url
 
     def mkdir_per_source(self, source:str):
         # Folder to store original docs downloaded from Knesset ODATA
-        if not os.path.exists(f"{source}_jsons"):
-            os.makedirs(f"{source}_jsons")
+        if not os.path.exists(f"{source}_metadata_jsons"):
+            os.makedirs(f"{source}_metadata_jsons")
 
     
     def save_response_json(self, response:requests.Response, source_name:str, url:str):
 
         json_obj=json.dumps( response.json())
-        _name=response.json()["odata.nextLink"].replace("?$skiptoken=", "_")
-        _file=os.path.join(f"{source_name}_jsons", f"{_name}.json")
+        if "odata.nextLink" in response.json():
+            _name=response.json()["odata.nextLink"].replace("?$skiptoken=", "_")
+        else:
+            _name="last_json"
+        _file=os.path.join(f"{source_name}_metadata_jsons", f"{_name}.json")
         with open(_file, "w") as output_file:
             output_file.write(json_obj)
         return
